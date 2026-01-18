@@ -22,12 +22,13 @@ orcid: 0009-0004-2685-7579
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am a Research Associate in Aerospace Engineering at the University of Bristol, affiliated with the Bristol Composites Institute. I recently completed my PhD, where my research focused on the design, manufacturing, and mechanical characterisation of filament-wound composite joints for modular truss structures, with applications in lightweight aerospace systems.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My work combines composite manufacturing, structural mechanics, and computational methods. A key contribution lies in the development of automated three-dimensional filament winding path planning approaches, extending graph-theoretical concepts to account for spatial constraints and manufacturability. I also apply finite element analysis and optimisation techniques to evaluate and improve structural performance.
+  </p>
+  <p>
+    I have experience across the full engineering workflow, including CAD design, nonlinear FEA, experimental rig development, and mechanical testing, as well as the design of bespoke winding equipment to support repeatable composite fabrication. More broadly, my interests include continuous fibre composite processes, structural optimisation, and analysis-driven design for lightweight structures.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
