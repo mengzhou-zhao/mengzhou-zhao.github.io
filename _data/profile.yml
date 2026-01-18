@@ -36,12 +36,12 @@ portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: University of Bristol
+  logo: /assets/images/badges/University_of_Bristol.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
+    Department of Aerospace Engineering <br/>
+    Ph.D.
+  date: Nov. 2020 - Sep. 2025
 - name: Peking University
   logo: /assets/images/badges/PKU_red.png
   position: B.S. in Computer Science
