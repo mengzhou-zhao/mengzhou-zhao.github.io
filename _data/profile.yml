@@ -39,13 +39,13 @@ education:
 - name: University of Bristol
   logo: /assets/images/badges/University_of_Bristol.png
   position: >- 
-    Department of Aerospace Engineering <br/>
-    Ph.D.
+    Faculty of Science and Engineering <br/>
+    Ph.D. in Aerospace Engineering
   date: Nov. 2020 - Sep. 2025
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+- name: University of Bristol
+  logo: /assets/images/badges/University_of_Bristol.png
+  position: MEng. in Mechanical Engineering
+  date: Sep. 2016 - Jul. 2020
 
 # experience:
 # - name: Peking University
