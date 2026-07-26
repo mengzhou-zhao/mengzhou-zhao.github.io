@@ -1,49 +1,164 @@
 @charset "utf-8";
+
+:root {
+    --color-bg: #FAF9F5;
+    --color-surface: #FFFFFF;
+    --color-ink: #1C1A17;
+    --color-muted: #75706A;
+    --color-border: #E6E2DA;
+    --color-accent: #A8462F;
+    --color-accent-soft: #F3E4DE;
+    --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-sans: "Inter", "Lato", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-sans);
     font-weight: 400;
-    padding-top: 5.0rem;
+    padding-top: 5.5rem;
+    background-color: var(--color-bg) !important;
+    color: var(--color-ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color .15s ease;
+}
+
+a:hover {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    text-underline-offset: 2px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-surface) !important;
+    border-bottom: 1px solid var(--color-border);
+    opacity: 1;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--color-ink) !important;
+}
+
+.navbar .nav-link {
+    color: var(--color-muted) !important;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    padding: 0.55rem 1rem !important;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-ink) !important;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: var(--color-accent) !important;
+    border-bottom-color: var(--color-accent);
+}
+
+.navbar-toggler {
+    color: var(--color-ink);
+    border-color: var(--color-border);
+}
+
+/* Surfaces */
+.bg-light {
+    background-color: var(--color-bg) !important;
+}
+
+.bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.text-muted {
+    color: var(--color-muted) !important;
+}
+
+.card, .shadow-sm {
+    box-shadow: none !important;
+    border: 1px solid var(--color-border) !important;
 }
 
 .card {
-    border-radius: 0.8rem!important;
+    border-radius: 0.4rem!important;
 }
 
 .card-img-overlay {
-    border-radius: 0.8rem!important;
+    border-radius: 0.4rem!important;
 }
 
 .rounded-xl {
-    border-radius: 0.8rem!important;
+    border-radius: 0.4rem!important;
 }
 
 .rounded-xl-bottom {
-    border-bottom-right-radius: 0.8rem !important;
-    border-bottom-left-radius: 0.8rem !important;
+    border-bottom-right-radius: 0.4rem !important;
+    border-bottom-left-radius: 0.4rem !important;
 }
 
 .rounded-xl-top {
-    border-top-left-radius: 0.8rem !important;
-    border-top-right-radius: 0.8rem !important;
+    border-top-left-radius: 0.4rem !important;
+    border-top-right-radius: 0.4rem !important;
 }
 
+.border-gray {
+    border-color: var(--color-border) !important;
+}
+
+/* Sidebar year navigation (publications / projects) */
+.nav-pills .nav-link {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    border-radius: 0.3rem;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--color-ink);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--color-accent-soft) !important;
+    color: var(--color-accent) !important;
+    font-weight: 600;
+}
 
 .text-profile-position {
     font-weight: 400;
+    color: var(--color-muted);
 }
 
 .text-profile-bio {
-    /* font-family: "Raleway"; */
     font-weight: 400;
+    line-height: 1.75;
 }
 
 .navbar {
-    opacity: 0.95;
+    opacity: 1;
 }
 
 .inline-badge {
@@ -86,7 +201,31 @@ div.lazy {
     font-size: 100%;
 }
 
-.email-text {
-    font-family: Source Code Pro, monospace;
+.badge-light {
+    background-color: transparent;
+    border: 1px solid var(--color-border) !important;
+    color: var(--color-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
 }
 
+.email-text {
+    font-family: "Source Code Pro", monospace;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+    background-color: #8a3823;
+    border-color: #8a3823;
+}
+
+footer.footer {
+    border-top: 1px solid var(--color-border) !important;
+    background-color: var(--color-bg) !important;
+}
