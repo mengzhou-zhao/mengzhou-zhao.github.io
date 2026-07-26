@@ -21,4 +21,11 @@ summary: >-
       <div class="small text-center text-muted">Coaxial joint prototypes, varied member thicknesses</div>
     </div>
   </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12 text-center">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-assembly.png" class="rounded-sm mb-1" style="width: 60%;" alt="Exploded assembly and cross-section of the coaxial joint tube, tow catcher, mounting bracket and bonded-in threaded rod">
+      <div class="small text-center text-muted">Joint-tube assembly and section: tow catcher, mounting bracket and threaded-rod insert</div>
+    </div>
+  </div>
 ---
