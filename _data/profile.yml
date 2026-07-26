@@ -22,13 +22,13 @@ orcid: 0009-0004-2685-7579
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Research Associate in Aerospace Engineering at the University of Bristol, affiliated with the Bristol Composites Institute. I recently completed my PhD, where my research focused on the design, manufacturing, and mechanical characterisation of filament-wound composite joints for modular truss structures, with applications in lightweight aerospace systems.
+    I am a Research Associate in Aerospace Engineering at the University of Bristol, affiliated with the Bristol Composites Institute, where I recently completed my PhD. I work on hard engineering problems that refuse to stay in a single discipline &mdash; where geometry, materials, manufacturing, and structural performance are tightly coupled and cannot be optimised in isolation. My research on filament-wound composite joints for modular truss structures sits exactly at that intersection, targeting lightweight aerospace systems.
   </p>
   <p>
-    My work combines composite manufacturing, structural mechanics, and computational methods. A key contribution lies in the development of automated three-dimensional filament winding path planning approaches, extending graph-theoretical concepts to account for spatial constraints and manufacturability. I also apply finite element analysis and optimisation techniques to evaluate and improve structural performance.
+    I am drawn to problems with many interacting dimensions and a large design space, and I enjoy reframing them so they become tractable. A central example is my work on automated three-dimensional filament winding path planning, where I extended graph-theoretical methods to simultaneously satisfy spatial constraints, fibre continuity, and manufacturability &mdash; turning what had been a manual, trial-and-error craft into a systematic, computationally driven design process.
   </p>
   <p>
-    I have experience across the full engineering workflow, including CAD design, nonlinear FEA, experimental rig development, and mechanical testing, as well as the design of bespoke winding equipment to support repeatable composite fabrication. More broadly, my interests include continuous fibre composite processes, structural optimisation, and analysis-driven design for lightweight structures.
+    My strength lies in moving fluidly across the full engineering workflow and connecting the pieces: CAD and geometric modelling, nonlinear finite element analysis, structural optimisation, bespoke winding-rig and equipment design, and experimental validation through mechanical testing. I combine computational modelling with hands-on manufacturing and characterisation, so that analysis, fabrication, and physical evidence inform one another. More broadly, my interests span continuous-fibre composite processes, analysis-driven design, and optimisation for lightweight structures.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
