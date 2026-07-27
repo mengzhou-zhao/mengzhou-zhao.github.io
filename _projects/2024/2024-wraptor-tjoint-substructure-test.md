@@ -15,6 +15,12 @@ tags_zh:
   - 力学测试
   - 结构分析
 summary: >-
+  <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
+    <p class="mb-1"><strong>Problem</strong> &mdash; An FE design tool needs validating on a realistic substructure, and you need to understand why real parts fall short of their predictions.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I designed the two-part cantilever rig (with a separate reference frame that subtracts the rig's own compliance), ran the combined bending&ndash;torsion tests, and diagnosed the mismatch.</p>
+    <p class="mb-0"><strong>Impact</strong> &mdash; Traced early softening to a manufacturing-induced pre-buckle; modelling that defect made the FE bracket the measured response &mdash; validating the tool and showing why manufacturing defects must live in the model.</p>
+  </div>
+
   Design and execution of a combined bending&ndash;torsion test on a WrapToR T-jointed carbon-fibre substructure &mdash; three filament-wound truss beams joined by an optimised wound T-joint &mdash; to measure its stiffness and validate the finite-element (FE) design tool. I designed a two-part cantilevered rig around an INSTRON 8872: a stiff primary mount built from bolted aluminium extrusions, plus a separate unloaded reference frame carrying four LVDTs that measured the rig's own deflection so it could be subtracted from each reading (it proved to be 2.3% of the signal). The load was applied off-centre on the middle beam to induce combined bending and torsion, and four repeated runs were averaged. The response softened earlier than predicted; close inspection traced this to slightly pre-buckled members caused by an unforeseen winding-mandrel interference. Representing that defect in the FE model moved the prediction from overestimating stiffness by roughly a third to bracketing the measured response &mdash; validating the analysis tool and showing why realistic modelling of manufacturing defects matters.
 
   <div class="row mt-2 no-gutters">
@@ -28,6 +34,12 @@ summary: >-
     </div>
   </div>
 summary_zh: >-
+  <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
+    <p class="mb-1"><strong>问题</strong> &mdash; 有限元设计工具需要在真实子结构上得到验证，而且必须弄清真实零件为何达不到预测。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我设计了两段式悬臂台架（含一个独立参考框架以扣除台架自身柔度），完成弯扭复合加载试验并诊断了偏差。</p>
+    <p class="mb-0"><strong>成果与应用</strong> &mdash; 将提前软化追溯到制造引入的杆件预屈曲；把该缺陷纳入模型后，有限元恰好包络住实测响应——既验证了工具，也说明了为何制造缺陷必须进入模型。</p>
+  </div>
+
   对一个 WrapToR T 形节点碳纤维子结构——由三根纤维缠绕桁架梁通过一个优化缠绕的 T 形节点连接而成——进行弯曲&ndash;扭转复合加载试验的设计与实施，用以测量其刚度并验证有限元（FE）设计工具。我围绕一台 INSTRON 8872 设计了一套两部分组成的悬臂台架：一个由螺栓连接铝型材搭建的刚性主安装座，以及一个独立的、不承载的参考框架，其上装有四只 LVDT 用于测量台架自身的变形，从而可从每次读数中予以扣除（结果表明其仅占信号的 2.3%）。载荷偏心施加于中间梁上以引入弯扭复合作用，取四次重复试验的平均值。结构响应比预测更早出现软化；细致检查发现，这源于一处未预料到的缠绕芯轴干涉所导致的杆件轻微预屈曲。将该缺陷纳入有限元模型后，预测结果从原本高估刚度约三分之一转变为恰好包络住实测响应——既验证了该分析工具，也说明了为何真实还原制造缺陷至关重要。
 
   <div class="row mt-2 no-gutters">

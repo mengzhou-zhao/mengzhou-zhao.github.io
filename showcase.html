@@ -5,10 +5,11 @@ navbar_title: Showcase
 container_class: container-xl
 ---
 
-{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
+{% assign shown_cards = site.showcase | where: "show", true | where_exp: "item", "item.path contains '_showcase/engineering'" %}
+{% assign cards_by_group = shown_cards | sort: "date" | reverse | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-<h1><span class="lang-en" lang="en">{{ group.name }}</span><span class="lang-zh" lang="zh">{% case group.name %}{% when 'Beyond the Research' %}研究之外{% when 'Conferences' %}学术会议{% when 'Travel' %}旅行足迹{% when 'Life' %}生活日常{% else %}{{ group.name }}{% endcase %}</span></h1>
+<h1><span class="lang-en" lang="en">{{ group.name }}</span><span class="lang-zh" lang="zh">{% case group.name %}{% when 'Engineering, Hands-On' %}亲手做的工程{% when 'Custom Test Equipment' %}自制实验设备{% when 'Tooling &amp; 3D-Printed Parts' %}工装与 3D 打印件{% when 'Prototypes &amp; Iterations' %}原型与迭代{% when 'Failures &amp; Lessons' %}失败与教训{% else %}{{ group.name }}{% endcase %}</span></h1>
 <div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}
