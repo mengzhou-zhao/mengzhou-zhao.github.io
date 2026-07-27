@@ -12,8 +12,8 @@
                 <div class="lazy always-load d-block rounded-xl" data-src="{{ item.src | relative_url }}" style="height: {{ include.height }};">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>{{ item.title }}</h5>
-                    <p>{{ item.desc }}</p>
+                    <h5>{% include i18n.html en=item.title zh=item.title_zh %}</h5>
+                    <p>{% include i18n.html en=item.desc zh=item.desc_zh %}</p>
                 </div>
                 {% if item.link %}</a>{% endif %}
             </div>

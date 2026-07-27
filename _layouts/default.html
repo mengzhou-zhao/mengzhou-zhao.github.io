@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <!-- Template: https://github.com/luost26/academic-homepage -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+
+    <!-- Bilingual: set the initial language synchronously to avoid a flash of the wrong language.
+         Priority: manual choice > this-session auto-detect > browser language > English.
+         The geo-IP refinement (China -> Chinese) runs later in assets/js/i18n.js. -->
+    <style>
+        html[data-lang='en'] .lang-zh { display: none !important; }
+        html[data-lang='zh'] .lang-en { display: none !important; }
+        /* Before JS runs, show English only. */
+        html:not([data-lang]) .lang-zh { display: none !important; }
+    </style>
+    <script>
+        (function () {
+            var lang;
+            try { lang = localStorage.getItem('siteLangManual') || sessionStorage.getItem('siteLangAuto'); } catch (e) {}
+            if (!lang) {
+                var l = (navigator.language || navigator.userLanguage || '').toLowerCase();
+                lang = l.indexOf('zh') === 0 ? 'zh' : 'en';
+            }
+            var el = document.documentElement;
+            el.setAttribute('data-lang', lang);
+            el.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+        })();
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
@@ -47,5 +70,6 @@
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/semantic_scholar_citation_count.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/i18n.js' | relative_url }}"></script>
 </body>
 </html>

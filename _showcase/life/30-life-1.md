@@ -11,7 +11,7 @@ group: Life
          src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
          alt="Life photo 1">
     <div class="p-3">
-        <h5 class="card-title mb-1">A hobby</h5>
-        <p class="card-text text-muted mb-0">One line about what this is.</p>
+        <h5 class="card-title mb-1"><span class="lang-en" lang="en">A hobby</span><span class="lang-zh" lang="zh">一项爱好</span></h5>
+        <p class="card-text text-muted mb-0"><span class="lang-en" lang="en">One line about what this is.</span><span class="lang-zh" lang="zh">用一句话介绍这是什么。</span></p>
     </div>
 </div>

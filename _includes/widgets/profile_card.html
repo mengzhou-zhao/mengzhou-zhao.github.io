@@ -19,7 +19,7 @@
 
                         <div class="d-flex">
                             <div class="h1 font-weight-normal">
-                                {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                                {% include i18n.html en=site.data.profile.primary_name zh=site.data.profile.primary_name_zh %} <small>{{ site.data.profile.secondary_name }}</small>
                             </div>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
@@ -34,14 +34,14 @@
                             {% if position.logo -%}
                             <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
                             {%- endif %}
-                            {{ position.name }}<br/>
+                            {% include i18n.html en=position.name zh=position.name_zh %}<br/>
                             {% endfor %}
                         </div>
                         <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
-                            {{ site.data.profile.short_bio }}
+                            {% include i18n.html en=site.data.profile.short_bio zh=site.data.profile.short_bio_zh tag="div" %}
                         </div>
                         {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> {% include i18n.html en="Curriculum Vitae" zh="个人简历（CV）" %}</a> <br/>
                         {% endif %}
                     </div>
         
@@ -113,7 +113,7 @@
             </div>
             {% endif %}
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">{% include i18n.html en="Close" zh="关闭" %}</button>
             </div>
         </div>
     </div>

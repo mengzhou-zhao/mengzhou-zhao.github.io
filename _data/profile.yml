@@ -1,10 +1,13 @@
 primary_name: "Mengzhou Zhao"
+# primary_name_zh: 赵孟舟   # <-- OPTIONAL: uncomment and set your preferred Chinese name; falls back to the English name if left blank
 secondary_name: ""
 navbar_name: "Mengzhou Zhao"
 
 positions:
 - name: Research Associate
+  name_zh: 研究员（博士后）
 - name: Bristol Composite Institute
+  name_zh: 布里斯托复合材料研究所
   # logo: /assets/images/badges/Bristol_Composite_Institute.png  # add this file to enable the logo
 
 
@@ -31,20 +34,40 @@ short_bio: >-
     My strength lies in moving fluidly across the full engineering workflow and connecting the pieces: CAD and geometric modelling, nonlinear finite element analysis, structural optimisation, bespoke winding-rig and equipment design, and experimental validation through mechanical testing. I combine computational modelling with hands-on manufacturing and characterisation, so that analysis, fabrication, and physical evidence inform one another. More broadly, my interests span continuous-fibre composite processes, analysis-driven design, and optimisation for lightweight structures.
   </p>
 
+# Chinese version of the bio shown when the site is in Chinese mode.
+short_bio_zh: >-
+  <p>
+    我是布里斯托大学（University of Bristol）航空航天工程专业的研究员，隶属布里斯托复合材料研究所（Bristol Composites Institute），并于近期在此完成博士学位。我专注于那些无法被单一学科框定的工程难题——在这类问题中，几何、材料、制造工艺与结构性能彼此紧密耦合，无法孤立地各自优化。我关于模块化桁架结构中纤维缠绕复合材料连接节点的研究，正处在这一交叉点上，面向轻量化航空航天系统。
+  </p>
+  <p>
+    我尤其着迷于那些维度众多、彼此影响且设计空间庞大的问题，并乐于对它们重新建构，使其变得可解。一个典型例子是我在自动化三维纤维缠绕路径规划方面的工作：我拓展了图论方法，使其能够同时满足空间约束、纤维连续性与可制造性——将原本依赖手工、反复试错的工艺，转化为一套系统化、由计算驱动的设计流程。
+  </p>
+  <p>
+    我的长处在于能够在完整的工程流程中自如穿梭，并将各个环节串联起来：CAD 与几何建模、非线性有限元分析、结构优化、定制缠绕装置与设备设计，以及通过力学测试进行的实验验证。我把计算建模与亲手参与的制造和表征结合起来，让分析、制造与实物证据彼此印证、相互启发。更广义地说，我的研究兴趣涵盖连续纤维复合材料工艺、以分析驱动的设计，以及面向轻量化结构的优化。
+  </p>
+
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_caption_zh: >-
+  照片由 Manja Vitolic 拍摄，来自 Unsplash（此说明为可选项，可注释掉以隐藏）。
 
 education:
 - name: University of Bristol
+  name_zh: 布里斯托大学
   logo: /assets/images/badges/University_of_Bristol.png
-  position: >- 
+  position: >-
     Faculty of Science and Engineering <br/>
     Ph.D. in Aerospace Engineering
+  position_zh: >-
+    理工学部 <br/>
+    航空航天工程 博士
   date: Nov. 2020 - Sep. 2025
 - name: University of Bristol
+  name_zh: 布里斯托大学
   logo: /assets/images/badges/University_of_Bristol.png
   position: MEng. in Mechanical Engineering
+  position_zh: 机械工程 硕士（MEng）
   date: Sep. 2016 - Jul. 2020
 
 # experience:

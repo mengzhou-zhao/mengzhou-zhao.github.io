@@ -1,0 +1,20 @@
+{%- comment -%}
+  Bilingual text helper.
+  Renders both an English and a Chinese variant; the active one is shown by CSS
+  (see the .lang-en / .lang-zh rules in _layouts/default.html) based on the
+  data-lang attribute on <html>.
+
+  Usage:
+    {% include i18n.html en=item.title zh=item.title_zh %}
+    {% include i18n.html en="Education" zh="教育经历" tag="span" %}
+
+  Params:
+    en   (required) English text/HTML.
+    zh   (optional) Chinese text/HTML. Falls back to `en` when empty.
+    tag  (optional) Wrapper element. Defaults to "span" (inline).
+                    Use tag="div" when the content is block-level (e.g. a
+                    paragraph or a block that contains <div>/<img>).
+{%- endcomment -%}
+{%- assign _tag = include.tag | default: "span" -%}
+{%- assign _zh = include.zh | default: include.en -%}
+<{{ _tag }} class="lang-en" lang="en">{{ include.en }}</{{ _tag }}><{{ _tag }} class="lang-zh" lang="zh">{{ _zh }}</{{ _tag }}>

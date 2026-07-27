@@ -8,7 +8,7 @@ container_class: container-xl
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-<h1>{{ group.name }}</h1>
+<h1><span class="lang-en" lang="en">{{ group.name }}</span><span class="lang-zh" lang="zh">{% case group.name %}{% when 'Beyond the Research' %}研究之外{% when 'Conferences' %}学术会议{% when 'Travel' %}旅行足迹{% when 'Life' %}生活日常{% else %}{{ group.name }}{% endcase %}</span></h1>
 <div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}

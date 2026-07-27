@@ -6,16 +6,16 @@
                     {% if site.data.profile.education %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Education</h6>
+                            <h6>{% include i18n.html en="Education" zh="教育经历" %}</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.education %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
+                                        <div>{% include i18n.html en=item.name zh=item.name_zh %}</div>
+                                        <div class="small">{% include i18n.html en=item.dept zh=item.dept_zh %}</div>
                                         <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
+                                            <div>{% include i18n.html en=item.position zh=item.position_zh %}</div>
                                             <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
                                     </div>
@@ -29,16 +29,16 @@
                     {% if site.data.profile.experience %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Experience</h6>
+                            <h6>{% include i18n.html en="Experience" zh="工作经历" %}</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media mb-1">
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
+                                        <div>{% include i18n.html en=item.name zh=item.name_zh %}</div>
+                                        <div class="small">{% include i18n.html en=item.dept zh=item.dept_zh %}</div>
                                         <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
+                                            <div>{% include i18n.html en=item.position zh=item.position_zh %}</div>
                                             <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
                                         </div>
                                     </div>
@@ -52,12 +52,12 @@
                     {% if site.data.profile.awards %}
                     <div class="col-lg-6">
                         <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
+                            <h6>{% include i18n.html en="Honors &amp; Awards" zh="荣誉与奖项" %}</h6>
                             <ul class="list small pl-3 mb-1">
                                 {% for item in site.data.profile.awards %}
                                 <li>
                                     <div class="d-flex">
-                                        <div>{{ item.name }}</div>
+                                        <div>{% include i18n.html en=item.name zh=item.name_zh %}</div>
                                         <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
                                     </div>
                                 </li>

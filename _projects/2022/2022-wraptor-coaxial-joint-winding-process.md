@@ -1,13 +1,19 @@
 ---
 title:      "3D Winding Process for Modular Wound Truss Joints: Coaxial Joint Development"
+title_zh:   "模块化缠绕桁架节点的三维缠绕工艺：同轴节点研发"
 date:       2022-03-01 00:01:00 +0800
 selected:   true
 role:       "PhD Research"
+role_zh:    "博士研究"
 cover:      /assets/images/covers/wraptor-coaxial-joint-winder.png
 tags:
   - Composites
   - Filament Winding
   - Manufacturing
+tags_zh:
+  - 复合材料
+  - 纤维缠绕
+  - 制造工艺
 summary: >-
   Extending the two-dimensional WrapToR beam-winding method into a fully three-dimensional process that builds a complete modular truss joint in a single continuous wind. The joint is treated as an independent component: short pultruded CFRP "joint tubes" are held on a mandrel at exact centre-to-centre spacing, and resin-wetted carbon tow is wound around them to form perimeter, shear, and chord members that can be selectively reinforced by varying the number of passes. The key enabler is a purpose-designed 3D-printed "tow catcher" — a two-armed anchor mounted concentrically to each joint tube that grips the tow through large direction changes and presses it flat against the tube to maximise bond area, replacing the simple turning posts used for beams. A hand-wound coaxial joint (connecting a 94&nbsp;mm and a 63&nbsp;mm WrapToR truss) proved the concept, producing a 17.85&nbsp;g prototype (3.12&nbsp;g tubes + 14.73&nbsp;g wound lattice) and laying the manufacturing foundation for more complex multi-truss joints.
 
@@ -26,6 +32,26 @@ summary: >-
     <div class="col-12 text-center">
       <img src="/assets/images/covers/wraptor-coaxial-joint-assembly.png" class="rounded-sm mb-1" style="width: 60%;" alt="Exploded assembly and cross-section of the coaxial joint tube, tow catcher, mounting bracket and bonded-in threaded rod">
       <div class="small text-center text-muted">Joint-tube assembly and section: tow catcher, mounting bracket and threaded-rod insert</div>
+    </div>
+  </div>
+summary_zh: >-
+  将二维的 WrapToR 梁缠绕方法拓展为一套完整的三维工艺，在一次连续缠绕中即可构建出完整的模块化桁架节点。该节点被视为一个独立部件：数根短的拉挤成型碳纤维复合材料“节点管”按精确的中心距固定在芯轴上，再将浸润树脂的碳纤维束缠绕其上，形成周边杆、剪切杆与弦杆，并可通过改变缠绕道数对各杆件进行选择性加强。实现这一工艺的关键，是一款专门设计的 3D 打印“捕束器”（tow catcher）——一个与每根节点管同心安装的双臂锚定件，能在纤维束大幅改变方向时将其牢牢抓住，并将其压平贴合管壁以最大化粘接面积，取代了缠绕梁时所用的简单转向柱。一个手工缠绕的同轴节点（连接一根 94&nbsp;mm 与一根 63&nbsp;mm 的 WrapToR 桁架）验证了这一概念，制得的样件重 17.85&nbsp;g（节点管 3.12&nbsp;g + 缠绕格构 14.73&nbsp;g），为更复杂的多桁架节点奠定了制造基础。
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-tow-catcher.png" class="w-100 rounded-sm mb-1" alt="Front view of the 3D-printed tow-catcher gripping carbon tow against the joint tubes">
+      <div class="small text-center text-muted">捕束器：双臂捕束几何结构</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-prototypes.png" class="w-100 rounded-sm mb-1" alt="Several coaxial joint prototypes wound with different member thicknesses">
+      <div class="small text-center text-muted">同轴节点样件，不同杆件厚度</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12 text-center">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-assembly.png" class="rounded-sm mb-1" style="width: 60%;" alt="Exploded assembly and cross-section of the coaxial joint tube, tow catcher, mounting bracket and bonded-in threaded rod">
+      <div class="small text-center text-muted">节点管装配与剖面：捕束器、安装支架与螺杆嵌件</div>
     </div>
   </div>
 ---

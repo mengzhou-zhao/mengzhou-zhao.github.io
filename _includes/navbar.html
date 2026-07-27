@@ -2,16 +2,22 @@
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
+            <i class="fas fa-map"></i> {% include i18n.html en="Menu" zh="菜单" %}
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation.pages %}
                 <li class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                    <a class="nav-link" href="{{ item.url | relative_url }}">{% include i18n.html en=item.name zh=item.name_zh %}</a>
                 </li>
                 {% endfor %}
+                <li class="nav-item d-flex align-items-center mt-2 mt-sm-0 ml-sm-3">
+                    <div class="btn-group btn-group-sm lang-toggle" role="group" aria-label="Language selection">
+                        <button type="button" class="btn btn-outline-secondary active" data-set-lang="en" aria-pressed="true">EN</button>
+                        <button type="button" class="btn btn-outline-secondary" data-set-lang="zh" aria-pressed="false">中文</button>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
