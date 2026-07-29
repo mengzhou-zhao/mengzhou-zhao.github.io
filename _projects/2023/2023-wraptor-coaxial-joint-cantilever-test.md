@@ -17,7 +17,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; Before WrapToR wound trusses can go into real lightweight airframes and space structures, an engineer has to predict the stiffness of the jointed structure at the drawing-board stage &mdash; otherwise no one will trust it with load. And whether the model can be trusted has to be proven with clean, repeatable experimental evidence.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I designed and built the cantilever rig and instrumentation, ran the test, and carried out the validation.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I designed and built the rig and its instrumentation. I designed the validation scheme to eliminate error sources one by one &mdash; verifying fixture rigidity with an inclinometer, averaging repeated readings at six stations along the span &mdash; so that what was measured was the structure itself and not the rig; then used that dataset to test the matrix-structural-analysis (MSA) model.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; Measured deflections matched the model to within 4.5% &mdash; establishing the matrix-structural-analysis model as a validated design tool, so these lightweight trusses can be designed with confidence and no repeated prototyping, cutting downstream development time and cost.</p>
   </div>
 
@@ -36,7 +36,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 要把 WrapToR 缠绕桁架真正用到轻量化飞行器与空间结构上，工程师必须能在画图阶段就准确预测这种带节点结构的刚度——否则没人敢让它承载。而模型能不能被信任，必须用干净、可复现的实验证据来证明。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 试验台架与测量系统由我设计并搭建，我完成了试验并做了模型验证。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 试验台架与测量系统由我设计搭建。我把验证方案设计成能逐一排除误差源——用倾角仪校核夹具刚性、沿跨度六点多次读数取平均——确保测到的是结构本身而非台架的变形；再用这批实测数据去检验矩阵结构分析（MSA）计算模型。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 实测挠度与模型预测偏差在 4.5% 以内——把矩阵结构分析（MSA）模型坐实为一件经验证的设计工具，使这类轻量化桁架无需反复打样即可放心设计，直接压缩后续研发的时间与成本。</p>
   </div>
 

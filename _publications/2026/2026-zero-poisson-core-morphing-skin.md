@@ -1,6 +1,6 @@
 ---
-title:          "Multi-Material Additive Manufacturing of an Auxetic-Core Morphing Wing Skin: Design and Hinge-Level Validation"
-title_zh:       "拉胀芯层（负泊松比）变形机翼蒙皮的多材料增材制造：设计与铰链级验证"
+title:          "Multi-Material Additive Manufacturing of a Zero-Poisson-Ratio-Core Morphing Wing Skin: Design and Hinge-Level Validation"
+title_zh:       "零泊松比芯层变形机翼蒙皮的多材料增材制造：设计与铰链级验证"
 date:           2026-07-03 00:01:00 +0800
 selected:       false
 pub:            "In preparation"

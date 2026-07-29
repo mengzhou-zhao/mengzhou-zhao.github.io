@@ -17,7 +17,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; To assemble these joints into complete multi-truss structures you need a finite-element tool that predicts real behaviour &mdash; and that can explain why real parts so often fall short of the ideal prediction. The answer usually hides in the manufacturing defects.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I designed the two-part cantilever rig (with a separate reference frame that subtracts the rig's own compliance), ran the combined bending&ndash;torsion tests, and diagnosed the mismatch.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I designed the two-part cantilever rig, using a separate unloaded reference frame to measure and subtract the rig's own compliance in situ, and ran the combined bending&ndash;torsion tests. When measurement and prediction disagreed I did not tune parameters to paper over it &mdash; I went back and found the manufacturing defect, put it explicitly into the finite-element model, and reconciled and validated the model against the data.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; Tracing the early softening to a manufacturing-induced pre-buckle and putting it into the model moved the FE from overestimating stiffness by about a third to bracketing the measured response &mdash; validating the design tool and establishing a lesson that matters in industry: a prediction is only realistic when manufacturing defects are modelled too.</p>
   </div>
 
@@ -36,7 +36,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 要把这些节点拼成完整的多桁架结构，就必须有一套能预测真实行为的有限元工具——而且要能解释：真实零件为什么常常达不到理想预测？答案往往就藏在制造缺陷里。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我设计了两段式悬臂台架（含一个独立参考框架以扣除台架自身柔度），完成弯扭复合加载试验并诊断了偏差。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我设计了两段式悬臂台架——用一个独立不承载的参考框架实时测出并扣除台架自身柔度，完成弯扭复合加载试验；当实测与预测对不上时，我没有去调参数凑合，而是回头查出制造缺陷，把它显式建进有限元模型，完成模型修正与验证。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 将提前软化追溯到一处制造引入的杆件预屈曲，并把它纳入模型后，有限元从"高估刚度约三分之一"变为恰好包络住实测响应——既验证了这套设计工具，也立起一条对工业至关重要的经验：真实的预测，必须把制造缺陷一起建进模型。</p>
   </div>
 

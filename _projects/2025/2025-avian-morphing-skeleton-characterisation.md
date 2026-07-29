@@ -19,7 +19,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; A morphing wing reshapes continuously, so its stiffness and strength change right across the range of motion &mdash; not something a single number can capture. To design a morphing skeleton that could actually fly, you first have to know how stiff it is at every extension, and where it breaks first.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I built the cantilever rig (fine feed stage + universal-joint loading), developed a backlash-separation routine, and ran the rigidity and failure tests.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I designed and built the cantilever rig (milling-machine-style fine feed stage, universal-joint loading so only a clean vertical force enters the structure). The hard part was that the linkage and actuator carry mechanical clearance, so the true elastic response and the backlash arrive mixed together in the same curve &mdash; I developed a stiffness-extraction routine to separate them before any stiffness could be fitted, then corroborated the experimental conclusion analytically through a Jacobian / virtual-joint stiffness mapping.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; Found that specific stiffness has a minimum fixed by geometry (not material), ranked which bones govern overall rigidity, and pinpointed the humerus&ndash;bearing joint as the first interface to fail &mdash; findings that tell the next design exactly where to reinforce and where to spend material, getting a morphing wing's strength-to-weight right first time.</p>
   </div>
 
@@ -38,7 +38,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 变形机翼会连续改变形态，它的刚度与强度也随之在整个运动范围内不断变化——不是一个数字能概括的。要设计一款真正能上天的变形骨架，就必须先摸清：它在每个展开状态下有多刚、又会在哪里最先断。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我搭建了悬臂台架（精密进给台 + 万向节加载），开发了间隙回差分离算法，并完成刚度与失效试验。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我设计搭建了悬臂试验台（铣床式精密进给台 + 万向节加载，确保只有纯竖向力进入结构）。难点在于连杆与作动器本身存在机械间隙，实测曲线里真实弹性响应和间隙回差混在一起——我为此开发了一套刚度提取算法把两者分离，才谈得上拟合刚度；最后再用雅可比／虚拟关节刚度映射，从解析上印证了实验得到的结论。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 发现比刚度存在一个由几何（而非材料）决定的极小值，厘清了各"骨骼"对整体刚度的主次，并锁定肱骨&ndash;轴承关节为最先失效的薄弱界面——这些结论直接告诉后续设计：该在哪里加强、把材料花在何处，让变形机翼的强重比一步到位。</p>
   </div>
 

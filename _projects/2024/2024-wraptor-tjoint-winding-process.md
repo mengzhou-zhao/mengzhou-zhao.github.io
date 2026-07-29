@@ -17,7 +17,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; A real space frame is never a single straight beam but a branching, hierarchical truss, which needs T-joints that connect three trusses at once. Yet as the process scaled to finer 3k tow, the resin-wetting step broke down &mdash; a "tow-catching" defect and poor fibre content that directly blocked the quality of these branching joints.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I diagnosed the defect and redesigned the tow-wetting system (tow wheel, precision PTFE guide tube, ceramic eyelet).</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I traced the defect to its root cause &mdash; uncontrolled resin wetting at finer tow &mdash; and redesigned a guided wetting system around it (tow wheel, precision PTFE guide tube, ceramic eyelet) that turns wetting from a matter of feel into a variable set by geometry; then verified the gain quantitatively by thermogravimetric analysis.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; Fibre volume fraction jumped from 22.5% to 46.3% (+105%), with more uniform fibre and fewer voids &mdash; one process redesign lifted part quality and repeatability to a new level, clearing the manufacturing barrier to building more complex hierarchical space frames.</p>
   </div>
 
@@ -36,7 +36,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 真实的空间框架从来不是一根直梁，而是不断分叉的层级桁架——这就需要能同时连接三根桁架的 T 形节点。可当工艺放大到更细的 3k 纤维束时，树脂浸润环节垮了：出现"捕束"缺陷、纤维含量偏低，直接卡住了分叉节点的制造质量。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我定位了该缺陷，并重新设计了纤维浸润系统（导轮、精密 PTFE 导管、陶瓷导丝眼）。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我把缺陷追溯到根因——细纤维束下的树脂浸润失控，据此重新设计了一套导向式浸润系统（导轮、精密 PTFE 导管、陶瓷导丝眼），把浸润量从"手感"变成由几何约束决定的可控变量；并用热重分析（TGA）定量验证改进效果。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 纤维体积分数从 22.5% 跃升到 46.3%（+105%），纤维排布更均匀、空隙更少——一次工艺再设计就把零件质量与一致性推上一个台阶，为构建更复杂的层级空间框架扫清了制造障碍。</p>
   </div>
 

@@ -19,7 +19,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; Designing the best morphing-wing skeleton is really a search through a large, conflicting trade-off space &mdash; bending stiffness, torsional stiffness and how compactly the wing folds all pull against each other &mdash; where every candidate costs one expensive high-fidelity FE run. Reaching the optimum by hand, through trial and error, is next to impossible.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I built the computational optimisation framework &mdash; Abaqus beam FE, surrogate models, an adaptive-infill loop, and a genetic multi-objective search &mdash; calibrated against experiment.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I built the whole digital design-optimisation framework: an Abaqus beam FE model evaluates candidate designs automatically; surrogate models (sparse polynomial chaos plus PC-Kriging) stand in for the expensive FE calls; an adaptive-infill loop spends accuracy precisely where the optimiser actually operates; and a genetic multi-objective search returns the converged front. The beam model is inverse-calibrated against the full experimental rigidity dataset, so the optimisation is anchored to measured behaviour rather than free-floating simulation.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; The framework delivers a Pareto-optimal front validated by full FE, and a Sobol analysis that shows exactly which geometric variables drive performance &mdash; upgrading morphing-skeleton design from hand trial-and-error to a systematic, experiment-anchored automatic search whose optimum is reproducible and explainable.</p>
   </div>
 
@@ -38,7 +38,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 要设计出最好的变形机翼骨架，本质上是在一个庞大且相互冲突的权衡空间里找最优——弯曲刚度、扭转刚度、折叠得有多紧凑，三者彼此拉扯；而每评估一个方案都要跑一次昂贵的高保真有限元。靠工程师手工试错，几乎不可能走到最优。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我构建了整套计算优化框架——Abaqus 梁有限元、代理模型、自适应填充循环与遗传多目标搜索——并与实验标定。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我构建了整套数字化设计优化框架：Abaqus 梁有限元自动评估候选设计，代理模型（稀疏多项式混沌 + PC-Kriging）替代昂贵的有限元调用，自适应填充循环专门把精度补在优化器真正工作的那片区域，再由遗传多目标搜索给出收敛前沿；并用完整实验刚度数据反演标定梁模型，使整个优化锚定在实测行为上，而不是悬空的仿真。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 框架直接给出一条经完整有限元验证的 Pareto 最优前沿，并用 Sobol 敏感性分析指出到底是哪些几何变量在主导性能——把变形骨架设计从"手工试错"升级为"系统化、以实验证据为锚"的自动寻优，让最优方案可复现、可解释。</p>
   </div>
 

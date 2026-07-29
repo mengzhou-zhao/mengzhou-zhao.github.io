@@ -19,7 +19,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; A wing that folds, extends and continuously reshapes like a bird's could keep one aircraft efficient across cruise, manoeuvre and loiter alike &mdash; a direction for the next generation of adaptive aircraft. But such a wing needs a light, many-jointed skeleton, and discrete hinges and metal brackets both add mass and scatter assembly failure points throughout it.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I developed the end-to-end manufacturing process: continuous filament winding over water-soluble PVA jigs with the bearings co-cured directly into the joints.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I developed the whole chain from tooling design to finished part, built around a dissolve-away sacrificial tooling system: an FDM-printed water-soluble PVA core with reusable translucent PETG inserts that pre-position the bearings and threaded inserts exactly, so continuous filament winding co-cures them straight into the structure. After cure the core dissolves, the joints are simply there, and assembly reduces to driving screws.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; A monolithic CFRP four-bar skeleton with the joints co-cured directly in, no metal brackets at all, and stiffness precisely tunable per pass (mass R&sup2;&nbsp;=&nbsp;0.997) &mdash; a repeatable, predictable process that turns a joint-integrated lightweight morphing mechanism from a concept into something you can actually build.</p>
   </div>
 
@@ -38,7 +38,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 像鸟一样折叠、展开、连续改变形态的变形机翼，能让同一架飞行器在巡航、机动与盘旋等不同状态下都保持高效——这正是下一代自适应飞行器的方向。但这样的机翼需要轻而多关节的骨架，而分立铰链与金属支架不仅增重，还处处埋下装配失效点。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我打通了完整的制造流程：在水溶性 PVA 工装上连续纤维缠绕，并将轴承直接共固化在关节处。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我打通了从工装设计到成品的完整制造链路，核心是一套"用完即溶"的牺牲性工装体系：FDM 打印的水溶性 PVA 芯，配可重复使用的半透明 PETG 插件，把轴承与螺纹嵌件预先定位在正确位置，让连续纤维缠绕能把它们直接共固化进结构内部；固化后溶掉芯体，关节即成，装配只剩拧螺钉。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 得到一体式碳纤维四连杆骨架，关节直接共固化在内、全无金属支架，刚度还能按缠绕道数精确调节（质量 R&sup2;&nbsp;=&nbsp;0.997）——用一条可复制、可预测的制造路线，把"关节一体化的轻量变形机构"从概念变成了真正能做出来的东西。</p>
   </div>
 

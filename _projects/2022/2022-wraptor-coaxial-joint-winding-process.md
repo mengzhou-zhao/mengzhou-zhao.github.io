@@ -17,7 +17,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; WrapToR wound carbon-fibre trusses are the ultra-light load-bearing lattice that lightweight aerospace and space structures have long wanted &mdash; but scaling them from single beams into complete modular space frames (satellite booms, deployable space structures, next-generation airframes) has always been bottlenecked not at the beam, but at the joints that connect them. Conventional joints are metal brackets or bonded fittings that add mass and fatigue, and no process existed to build a whole truss joint as one continuous composite part.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I developed the 3D winding process end-to-end and designed its key enabler, a 3D-printed "tow catcher", then hand-wound the first working coaxial joint.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I defined the whole 3D winding process architecture: parameterising the joint as a member layout that can be selectively reinforced by pass count, so stiffness becomes a design variable; I designed the key enabling tooling, a 3D-printed "tow catcher"; and I hand-wound the first working coaxial joint, closing the loop from concept through tooling to hardware.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; A 17.85&nbsp;g all-composite joint made in a single continuous wind, member stiffness freely tunable by pass count, with no metal and no secondary assembly &mdash; the keystone manufacturing capability for turning WrapToR trusses from single beams into complete modular space frames.</p>
   </div>
 
@@ -43,7 +43,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; WrapToR 缠绕碳纤维桁架，是轻量化航空航天与空间结构梦寐以求的超轻承载格构——但要把它从单根"梁"拼装成完整的模块化空间框架（卫星支架、可展开空间结构、下一代飞行器主结构），瓶颈从来不在梁，而在连接它们的节点。传统节点是增重且易疲劳失效的金属支架或粘接件，此前更没有任何工艺能把整个桁架节点作为一个连续的复合材料零件一次成型。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我从头到尾开发了这套三维缠绕工艺，并设计了实现它的关键工装——3D 打印"捕束器"，还亲手缠绕出第一个可用的同轴节点。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我定义了整套三维缠绕工艺架构：把节点参数化为一组可按缠绕道数选择性加强的杆件布局，使刚度成为可设计的变量；并设计了让这一切成立的关键工装——3D 打印"捕束器"；最后亲手缠出第一个可用的同轴节点，完成从概念、工装到实物的闭环。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 一次连续缠绕即得 17.85&nbsp;g 的全复合材料节点，杆件刚度可按缠绕道数自由调节，全程无金属、无二次装配——为把 WrapToR 桁架从单根梁推向完整的模块化空间框架，奠定了最关键的一块制造基石。</p>
   </div>
 

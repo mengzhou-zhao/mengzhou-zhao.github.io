@@ -17,7 +17,7 @@ tags_zh:
 summary: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>Problem</strong> &mdash; However light the truss, it cannot fly if the joint is unreliable &mdash; and the weak link of this wound joint was exactly the bonded interface: it failed by debonding, with widely scattered strength, a fatal reliability risk for any load-bearing use.</p>
-    <p class="mb-1"><strong>My role</strong> &mdash; I ran the tensile campaign and trialled a simple fibre-lashing reinforcement of the bonded interface.</p>
+    <p class="mb-1"><strong>My role</strong> &mdash; I designed the test campaign around the specific failure mode &mdash; debonding &mdash; then proposed and proved a reinforcement that replaces a resin-only bond with fibre bridging, and quantified both the strength gain and the reduction in scatter from repeated samples of each configuration.</p>
     <p class="mb-0"><strong>Impact</strong> &mdash; One simple fibre lashing raised the average failure load by 31.6% and cut scatter from 11.2% to 2.1% &mdash; both markedly stronger and far more consistent, turning the joint you least trusted into a predictable, load-worthy connection.</p>
   </div>
 
@@ -36,7 +36,7 @@ summary: >-
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
     <p class="mb-1"><strong>问题</strong> &mdash; 桁架再轻，只要节点不可靠就不能上飞行器——而这种缠绕节点的薄弱环节恰恰是粘接界面：它以脱粘方式失效、强度离散极大，对任何承载用途都是致命的可靠性风险。</p>
-    <p class="mb-1"><strong>我的角色</strong> &mdash; 我完成了拉伸试验，并尝试了一种简单的纤维捆扎加强来强化粘接界面。</p>
+    <p class="mb-1"><strong>我的角色</strong> &mdash; 我针对"脱粘"这一具体失效模式设计了试验方案，提出并验证了一种以纤维桥接取代纯树脂粘接的加强思路，再用每种构型多试样的统计结果，把强度提升与离散度收窄同时量化出来。</p>
     <p class="mb-0"><strong>成果与应用</strong> &mdash; 仅凭一招简单的纤维捆扎，就把平均失效载荷提高 31.6%、并把离散度从 11.2% 压到 2.1%——既显著增强、又大幅提升一致性，把这个曾经最不敢用的节点，变成可预测、可放心承载的连接。</p>
   </div>
 
