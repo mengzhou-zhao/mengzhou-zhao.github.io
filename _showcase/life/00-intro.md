@@ -12,7 +12,7 @@ group: Beyond the Research
         along the way, and how I spend time when I'm not in the lab.
     </p>
     <p class="mb-2 lang-zh" lang="zh">
-        「研究项目」与「论文发表」两页记录了我的科研工作。这一页则留给它周围的一切
+        「项目经历」与「论文发表」两页记录了我的科研工作。这一页则留给它周围的一切
         &mdash; 我参加过的学术会议、途中见到的风景，以及不在实验室时我如何度过时光。
     </p>
     <p class="mb-0 text-muted lang-en" lang="en">

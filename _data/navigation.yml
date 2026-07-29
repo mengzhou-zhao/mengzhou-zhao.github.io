@@ -5,12 +5,12 @@ pages:
 - name: Home
   name_zh: 首页
   url: /
+- name: Projects
+  name_zh: 项目经历
+  url: /projects
 - name: Publications
   name_zh: 论文发表
   url: /publications
-- name: Projects
-  name_zh: 研究项目
-  url: /projects
 - name: Showcase
   name_zh: 工程展示
   url: /showcase

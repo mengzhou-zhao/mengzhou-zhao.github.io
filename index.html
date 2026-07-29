@@ -16,20 +16,25 @@ navbar_title: Home
     {% endif %}
 {% endif %}
 
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Publications</span><span class="lang-zh" lang="zh">精选论文</span>'
-    %}
-{% endif %}
-
+{% comment %}
+    Projects come before publications on purpose: recruiters/HR read the
+    "what problem does this solve" framing of a project far more easily
+    than a paper title.
+{% endcomment %}
 {% if site.data.display.homepage.show_selected_projects %}
     {% assign projs = site.projects | sort: "date" | reverse | where: "selected", true %}
     {%
         include widgets/project_card.html
         projects=projs
         title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Projects</span><span class="lang-zh" lang="zh">精选项目</span>'
+    %}
+{% endif %}
+
+{% if site.data.display.homepage.show_selected_publications %}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Publications</span><span class="lang-zh" lang="zh">精选论文</span>'
     %}
 {% endif %}
