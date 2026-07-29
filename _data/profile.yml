@@ -47,10 +47,10 @@ short_bio_zh: >-
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
-portrait_caption_zh: >-
-  照片由 Manja Vitolic 拍摄，来自 Unsplash（此说明为可选项，可注释掉以隐藏）。
+# portrait_caption: >-
+#   Optional caption shown under the portrait; uncomment to enable.
+# portrait_caption_zh: >-
+#   此说明为可选项，取消注释即可启用。
 
 education:
 - name: University of Bristol
