@@ -16,7 +16,7 @@ images:
 <div>
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Single-print compliant skin</span><span class="lang-zh" lang="zh">一次3D打印成型的柔性蒙皮</span></h5>
-        <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A TPU corrugated skin and a PETG rigid frame co-printed as one part &mdash; no fasteners, no bonding, no assembly.</span><span class="lang-zh" lang="zh">TPU 波纹蒙皮与 PETG 刚性框架共打印为一个整件——无紧固件、无粘接、无装配。</span></p>
+        <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A TPU compliant skin and a PETG rigid frame co-printed as one part &mdash; no fasteners, no bonding, no assembly.</span><span class="lang-zh" lang="zh">TPU 柔性蒙皮与 PETG 刚性框架共打印为一个整件——无紧固件、无粘接、无装配。</span></p>
 
         <div class="build-log">
             <div class="build-log-row">
