@@ -5,7 +5,7 @@ date:       2023-06-01 00:01:00 +0800
 selected:   true
 role:       "PhD Research"
 role_zh:    "博士研究"
-cover:      /assets/images/covers/wraptor-coaxial-joint-cantilever.png
+cover:      /assets/images/covers/wraptor-coaxial-joint-lvdt.png
 tags:
   - Composites
   - Mechanical Testing
@@ -25,8 +25,8 @@ summary: >-
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
-      <img src="/assets/images/covers/wraptor-coaxial-joint-lvdt.png" class="w-100 rounded-sm mb-1" alt="Movable linear potentiometer and LVDT used to measure deflection along the cantilevered truss">
-      <div class="small text-center text-muted">Deflection measurement along the span</div>
+      <img src="/assets/images/covers/wraptor-coaxial-joint-cantilever.png" class="w-100 rounded-sm mb-1" alt="Jointed WrapToR truss cantilevered from the rigid aluminium bracket for the bending test">
+      <div class="small text-center text-muted">Jointed truss cantilevered from the rigid bracket</div>
     </div>
     <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-coaxial-joint-cantilever-results.png" class="w-100 rounded-sm mb-1" alt="Measured vs. MSA-predicted deflected shape at six nodes under tip loads from 0 to 44 N">
@@ -44,8 +44,8 @@ summary_zh: >-
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
-      <img src="/assets/images/covers/wraptor-coaxial-joint-lvdt.png" class="w-100 rounded-sm mb-1" alt="Movable linear potentiometer and LVDT used to measure deflection along the cantilevered truss">
-      <div class="small text-center text-muted">沿跨度的挠度测量</div>
+      <img src="/assets/images/covers/wraptor-coaxial-joint-cantilever.png" class="w-100 rounded-sm mb-1" alt="Jointed WrapToR truss cantilevered from the rigid aluminium bracket for the bending test">
+      <div class="small text-center text-muted">从刚性支架悬臂伸出的带节点桁架</div>
     </div>
     <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-coaxial-joint-cantilever-results.png" class="w-100 rounded-sm mb-1" alt="Measured vs. MSA-predicted deflected shape at six nodes under tip loads from 0 to 44 N">

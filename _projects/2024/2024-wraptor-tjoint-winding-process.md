@@ -29,8 +29,30 @@ summary: >-
       <div class="small text-center text-muted">"Tow-catching" defect, original process</div>
     </div>
     <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
+      <div class="small text-center text-muted">The redesigned wetting system mounted on the winder</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="w-100 rounded-sm mb-1" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
+      <div class="small text-center text-muted">Section: tow wheel, PTFE guide tube, ceramic eyelet</div>
+    </div>
+    <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-tjoint-tga-comparison.png" class="w-100 rounded-sm mb-1" alt="Thermogravimetric analysis mass loss curves comparing old and new winding process samples">
       <div class="small text-center text-muted">TGA mass loss: old vs. new process</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-tjoint-micrograph-old.jpg" class="w-100 rounded-sm mb-1" alt="Optical micrograph of a cured tow cross-section from the original process, showing sparse fibre packing, large resin-rich regions and several voids">
+      <div class="small text-center text-muted">Original process: sparse fibres, resin-rich regions, voids (100&times;)</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-tjoint-micrograph-new.jpg" class="w-100 rounded-sm mb-1" alt="Optical micrograph of a cured tow cross-section from the redesigned process, showing markedly denser and more uniform fibre packing">
+      <div class="small text-center text-muted">Redesigned process: denser, more uniform fibre packing (100&times;)</div>
     </div>
   </div>
 summary_zh: >-
@@ -48,8 +70,30 @@ summary_zh: >-
       <div class="small text-center text-muted">“捕束”缺陷，原工艺</div>
     </div>
     <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
+      <div class="small text-center text-muted">装于缠绕机上的再设计浸润系统</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="w-100 rounded-sm mb-1" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
+      <div class="small text-center text-muted">剖面：导轮、PTFE 导管、陶瓷导丝眼</div>
+    </div>
+    <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-tjoint-tga-comparison.png" class="w-100 rounded-sm mb-1" alt="Thermogravimetric analysis mass loss curves comparing old and new winding process samples">
       <div class="small text-center text-muted">TGA 质量损失：旧工艺 vs. 新工艺</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-tjoint-micrograph-old.jpg" class="w-100 rounded-sm mb-1" alt="Optical micrograph of a cured tow cross-section from the original process, showing sparse fibre packing, large resin-rich regions and several voids">
+      <div class="small text-center text-muted">原工艺：纤维稀疏、富树脂区大、有空隙（100×）</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-tjoint-micrograph-new.jpg" class="w-100 rounded-sm mb-1" alt="Optical micrograph of a cured tow cross-section from the redesigned process, showing markedly denser and more uniform fibre packing">
+      <div class="small text-center text-muted">新工艺：纤维更密实、排布更均匀（100×）</div>
     </div>
   </div>
 ---
