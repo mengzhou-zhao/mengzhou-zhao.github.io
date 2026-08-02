@@ -36,6 +36,10 @@ container_class: container-xl
     {% if item.width >= 6 -%}
         {%- assign width_sm = 12 -%}
         {%- assign width_xs = 12 -%}
+    {%- elsif item.width >= 4 -%}
+        {%- comment -%} Three across on desktop, two on tablet, one on a phone. {%- endcomment -%}
+        {%- assign width_sm = 6 -%}
+        {%- assign width_xs = 12 -%}
     {%- elsif item.width >= 2 -%}
         {%- assign width_sm = 6 -%}
         {%- assign width_xs = 6 -%}
@@ -45,6 +49,33 @@ container_class: container-xl
     {%- endif -%}
     <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
         <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+            {%- if item.images -%}
+            {%- assign cover = item.images | first -%}
+            <div class="showcase-thumb">
+                <img data-src="{{ cover.src | relative_url }}"
+                     class="lazy w-100 rounded-xl"
+                     src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
+                     alt="{{ cover.alt }}">
+                <span class="showcase-thumb-cue" aria-hidden="true"><i class="fas fa-expand"></i></span>
+                {%- if item.images.size > 1 -%}
+                <span class="showcase-thumb-count"><i class="fas fa-images"></i> {{ item.images.size }}</span>
+                {%- endif -%}
+            </div>
+            {%- comment -%}
+                The full gallery, read by assets/js/showcase_cards.js when the
+                lightbox opens. Kept as markup rather than JSON so the bilingual
+                captions ride on the site's existing .lang-en / .lang-zh rules.
+            {%- endcomment -%}
+            <div class="showcase-gallery d-none" aria-hidden="true">
+                {%- for img in item.images -%}
+                <figure data-src="{{ img.src | relative_url }}" data-alt="{{ img.alt | escape }}">
+                    {%- if img.caption -%}
+                    <figcaption><span class="lang-en" lang="en">{{ img.caption }}</span><span class="lang-zh" lang="zh">{{ img.caption_zh | default: img.caption }}</span></figcaption>
+                    {%- endif -%}
+                </figure>
+                {%- endfor -%}
+            </div>
+            {%- endif -%}
             {{ item.content }}
         </div>
     </div>

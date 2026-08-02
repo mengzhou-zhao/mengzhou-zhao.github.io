@@ -1,14 +1,21 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-06-01 00:01:00 +0800
 group: Custom Test Equipment
+images:
+  - src: /assets/images/covers/wraptor-coaxial-joint-cantilever.png
+    alt: "Cantilever bending test rig for the coaxial-joint truss structure"
+  - src: /assets/images/covers/wraptor-coaxial-joint-threaded-rod-end.webp
+    alt: "Threaded rod ends bonded into the truss members and overwound, giving the specimen a bolted interface to the rig"
+    caption: "How the specimen meets the rig: a threaded rod is set into each member end and wound over, so the truss bolts into the fixture instead of being clamped on its composite surface."
+    caption_zh: "试件与台架的接口：每根杆件端部埋入螺杆并缠绕包覆，使桁架以螺栓连接装入夹具，而不是直接夹持在复合材料表面上。"
+  - src: /assets/images/covers/wraptor-coaxial-joint-eccentricity.webp
+    alt: "Idealised truss centrelines overlaid on a real coaxial joint, showing the members do not intersect at a single point"
+    caption: "Idealised centrelines laid over the real joint: the members do not meet at one point. That offset is a local moment the pin-jointed idealisation does not contain &mdash; which is why the joint gets measured rather than assumed."
+    caption_zh: "把理想桁架轴线叠在真实节点上：各杆件并不交于一点。这段偏心意味着一个局部弯矩，而铰接理想化模型并不包含它——这正是节点需要实测、而非假设的原因。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/wraptor-coaxial-joint-cantilever.png' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="Cantilever bending test rig for the coaxial-joint truss structure">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Coaxial-joint cantilever rig</span><span class="lang-zh" lang="zh">同轴节点悬臂试验台</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">Cantilever bending rig whose fixture rigidity I verified with a 0.05&deg; inclinometer that held a zero reading under nearly double the test load.</span><span class="lang-zh" lang="zh">悬臂弯曲台架；夹具刚性用 0.05&deg; 倾角仪验证——在近乎两倍试验载荷下读数保持为零。</span></p>

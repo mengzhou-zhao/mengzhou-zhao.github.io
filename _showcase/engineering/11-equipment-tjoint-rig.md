@@ -1,14 +1,29 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-06-02 00:01:00 +0800
 group: Custom Test Equipment
+images:
+  - src: /assets/images/covers/wraptor-tjoint-test-rig-render.png
+    alt: "CAD design of the two-part cantilever rig for combined bending-torsion testing of a T-joint substructure"
+  - src: /assets/images/covers/wraptor-tjoint-rod-mount.jpg
+    alt: "Truss members terminating in threaded studs, double-nutted against a triangular aluminium end plate on the extrusion frame"
+    caption: "The anchored end: each member terminates in a threaded stud through a triangular end plate, double-nutted so the end condition is set deliberately and then locked."
+    caption_zh: "固定端：每根杆件以螺杆穿过三角端板，双螺母锁紧——端部约束是刻意设定的，设定后再锁死。"
+  - src: /assets/images/covers/wraptor-tjoint-rod-mount-detail.jpg
+    alt: "Close-up of the end plate with nuts bearing on both faces, capturing each truss member"
+    caption: "Nuts bear on both faces of the plate, so a member is clamped rather than merely pulled against a hole."
+    caption_zh: "端板两面都有螺母承压，杆件是被夹持住的，而不是仅仅顶在孔上。"
+  - src: /assets/images/covers/wraptor-tjoint-loading-yoke.jpg
+    alt: "Machined aluminium yoke clamped onto the truss, driven from above by the test machine crosshead"
+    caption: "Load introduction: a machined yoke clamps the middle member and is driven by the crosshead &mdash; the rig, not the machine, decides where the load lands."
+    caption_zh: "加载端：机加工的夹持件卡在中间杆件上，由横梁驱动——决定载荷作用点的是台架，而不是试验机。"
+  - src: /assets/images/covers/wraptor-tjoint-lvdt-angle.png
+    alt: "Schematic showing the joint rotation angle derived from two LVDT displacements over a known gauge length"
+    caption: "How the angle is recovered: two displacements a known distance apart give the rotation, so the reference frame's LVDTs measure the rig's own contribution instead of it being assumed away."
+    caption_zh: "转角是怎么算出来的：相隔已知距离的两个位移量即可解出转角——参考框架上的 LVDT 因此能把台架自身的贡献测出来，而不是假设它可以忽略。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/wraptor-tjoint-test-rig-render.png' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="CAD design of the two-part cantilever rig for combined bending-torsion testing of a T-joint substructure">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Bending&ndash;torsion T-joint rig</span><span class="lang-zh" lang="zh">弯扭复合 T 形节点台架</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A two-part cantilever rig around an INSTRON: a stiff main mount plus a separate unloaded reference frame that measures and subtracts the rig's own deflection (just 2.3% of signal).</span><span class="lang-zh" lang="zh">围绕 INSTRON 的两段式悬臂台架：刚性主安装座，加一个独立不承载的参考框架，测量并扣除台架自身变形（仅占信号 2.3%）。</span></p>

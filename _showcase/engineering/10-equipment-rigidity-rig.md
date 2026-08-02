@@ -1,14 +1,21 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-06-03 00:01:00 +0800
 group: Custom Test Equipment
+images:
+  - src: /assets/images/covers/avian-morphing-rigidity-test-rig.jpg
+    alt: "Custom-built cantilever rig for testing the morphing-wing skeleton across its range of extension"
+  - src: /assets/images/covers/avian-morphing-rigidity-rig-setup.jpg
+    alt: "A wound composite truss member mounted as a cantilever between a root fixture and the load cell, with the test machine's force and stroke readout alongside"
+    caption: "The rig mid-test: the member is clamped at the root on the feed stage and loaded at the tip through the load cell, with force and stroke read off together."
+    caption_zh: "试验进行中：杆件根部夹持在进给台上，翼尖经测力传感器加载，力与位移同步读取。"
+  - src: /assets/images/covers/avian-morphing-rigidity-universal-joint.jpg
+    alt: "Load cell coupled to the wound truss member through a universal joint and threaded rod"
+    caption: "The universal joint at the loading point: the coupling passes vertical force and nothing else, so no parasitic moment reaches the structure."
+    caption_zh: "加载点的万向节：该连接只传递竖向力，不传递弯矩，使附加力矩无法进入结构。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/avian-morphing-rigidity-test-rig.jpg' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="Custom-built cantilever rig for testing the morphing-wing skeleton across its range of extension">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Morphing-wing rigidity rig</span><span class="lang-zh" lang="zh">变形机翼刚度试验台</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">Aluminium-extrusion frame with a milling-machine-style feed stage for fine wing-tip positioning, loaded through a universal joint so only a clean vertical force reaches the structure.</span><span class="lang-zh" lang="zh">铝型材框架配铣床式进给台，实现翼尖精细定位；经万向节加载，使结构只承受纯净的竖向力。</span></p>

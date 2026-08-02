@@ -1,14 +1,21 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-05-01 00:01:00 +0800
 group: Tooling &amp; 3D-Printed Parts
+images:
+  - src: /assets/images/covers/wraptor-tjoint-winding-new.jpg
+    alt: "Guided tow-wetting system with a tow wheel, PTFE guide tube and ceramic eyelet during T-joint winding"
+  - src: /assets/images/covers/wraptor-tjoint-winder-axes.webp
+    alt: "The T-joint winder: an aluminium-extrusion frame with a stepper-driven rotating mandrel and X and Y carriages, the tow-wetting head riding on the Y axis"
+    caption: "Where the wetting head has to work: it rides on the X&ndash;Y carriage while the mandrel turns under it, so the tow is being paid out from a platform that is itself moving on three axes &mdash; which is why guiding the fibre, rather than dipping it, is what makes the process repeatable."
+    caption_zh: "浸润头的工作环境：它装在 X&ndash;Y 滑台上，而芯轴在其下方旋转——纤维是从一个自身正在三轴运动的平台上放出来的。这正是为什么让纤维走导轨、而不是过树脂槽，才能让工艺可复现。"
+  - src: /assets/images/covers/wraptor-tjoint-prebulking.jpg
+    alt: "Close-up of wound bracing members with straight red reference lines drawn between the nodes, arrows marking where the tow sits off the straight path"
+    caption: "The red lines are the straight path between nodes; the arrows mark where the tow actually sits. A bowed tow is not carrying load along the line the design assumed &mdash; which is what the guiding and tensioning have to fix."
+    caption_zh: "红线是节点之间的理想直线路径，箭头指出纤维束的实际位置。走弯了的纤维，并没有沿着设计假定的那条线传力——这正是导向与张力控制要解决的问题。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/wraptor-tjoint-winding-new.jpg' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="Guided tow-wetting system with a tow wheel, PTFE guide tube and ceramic eyelet during T-joint winding">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Guided tow-wetting system</span><span class="lang-zh" lang="zh">导向式纤维浸润系统</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A tow wheel, a 0.5&nbsp;mm PTFE tube and a ceramic eyelet that replaced a hand-held resin bath &mdash; and more than doubled the fibre content of the part.</span><span class="lang-zh" lang="zh">导轮 + 0.5&nbsp;mm PTFE 导管 + 陶瓷导丝眼，取代手持树脂槽——使零件的纤维含量翻倍有余。</span></p>

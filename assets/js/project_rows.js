@@ -1,15 +1,10 @@
 // Expand/collapse behaviour for the project rows on the projects page.
 //
-// Hover opens a row (desktop only) so the page can be skimmed without clicking;
-// clicking pins it open so it does not snap shut when the cursor drifts away
-// while reading. Touch devices get plain tap-to-toggle, since they have no hover.
+// Click to toggle. Hover deliberately does nothing: an expanded row is taller
+// than the viewport, so reading one means scrolling, and scrolling moves the
+// cursor off the row that opened it.
 (function () {
     'use strict';
-
-    var HOVER_OPEN_DELAY = 120;   // ms, so sweeping the cursor down the list does not cascade
-    var HOVER_CLOSE_DELAY = 160;  // ms, forgives brushing past the edge of a row
-
-    var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
     function setOpen(row, open) {
         row.classList.toggle('is-open', open);
@@ -25,27 +20,8 @@
             return;
         }
 
-        var openTimer = null;
-        var closeTimer = null;
-        // After an explicit click-to-close, hover must not immediately reopen the
-        // row under the cursor; wait until the pointer has actually left.
-        var hoverMuted = false;
-
-        function clearTimers() {
-            window.clearTimeout(openTimer);
-            window.clearTimeout(closeTimer);
-        }
-
-        function pin() {
-            clearTimers();
-            row.classList.add('is-pinned');
-            setOpen(row, true);
-        }
-
-        function unpin() {
-            clearTimers();
-            row.classList.remove('is-pinned');
-            setOpen(row, false);
+        function toggle() {
+            setOpen(row, !row.classList.contains('is-open'));
         }
 
         head.addEventListener('click', function (event) {
@@ -53,12 +29,7 @@
             if (event.target.closest('a')) {
                 return;
             }
-            if (row.classList.contains('is-pinned')) {
-                unpin();
-                hoverMuted = true;
-            } else {
-                pin();
-            }
+            toggle();
         });
 
         head.addEventListener('keydown', function (event) {
@@ -66,36 +37,7 @@
                 return;
             }
             event.preventDefault();
-            if (row.classList.contains('is-pinned')) {
-                unpin();
-            } else {
-                pin();
-            }
-        });
-
-        if (!canHover) {
-            return;
-        }
-
-        row.addEventListener('mouseenter', function () {
-            clearTimers();
-            if (hoverMuted || row.classList.contains('is-pinned')) {
-                return;
-            }
-            openTimer = window.setTimeout(function () {
-                setOpen(row, true);
-            }, HOVER_OPEN_DELAY);
-        });
-
-        row.addEventListener('mouseleave', function () {
-            clearTimers();
-            hoverMuted = false;
-            if (row.classList.contains('is-pinned')) {
-                return;
-            }
-            closeTimer = window.setTimeout(function () {
-                setOpen(row, false);
-            }, HOVER_CLOSE_DELAY);
+            toggle();
         });
     }
 
@@ -118,7 +60,6 @@
         if (!row) {
             return;
         }
-        row.classList.add('is-pinned');
         setOpen(row, true);
         target.scrollIntoView();
     }

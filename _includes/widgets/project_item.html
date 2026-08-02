@@ -2,9 +2,8 @@
     A project row on the projects page.
 
     Collapsed by default so the page reads as an overview: thumbnail, title,
-    role/year and tags. The full Problem / Role / Impact write-up unfolds on
-    hover (desktop) or tap (touch); clicking pins a row open so it survives the
-    cursor wandering off while you read it. Driven by assets/js/project_rows.js.
+    role/year and tags. Clicking the header unfolds the full Problem / Role /
+    Impact write-up. Driven by assets/js/project_rows.js.
 {% endcomment %}
 {% assign item = include.item %}
 <div class="project-row {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}">

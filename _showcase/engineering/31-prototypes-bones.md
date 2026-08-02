@@ -1,14 +1,21 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-04-02 00:01:00 +0800
 group: Prototypes &amp; Iterations
+images:
+  - src: /assets/images/covers/avian-morphing-wound-humerus-bones.jpg
+    alt: "Four filament-wound humerus bone specimens at increasing reinforcement levels"
+  - src: /assets/images/covers/avian-morphing-bones-specimen-set.jpg
+    alt: "Wound truss bone specimens laid out in pairs, each pair at a different winding pass count, with joint ends wound into the members"
+    caption: "The specimen set. Only the pass count changes from pair to pair &mdash; the joint ends are wound into the member rather than bonded on afterwards, so reinforcement level is the one variable being swept."
+    caption_zh: "试样全家福。各组之间唯一改变的是缠绕道数——关节端是随杆件一起缠绕成型、而非事后粘接，因此被扫掠的变量只有加强等级这一个。"
+  - src: /assets/images/covers/avian-morphing-bones-deposited-mass.jpg
+    alt: "A pair of wound truss bones weighed on a digital balance reading 12.38 grams"
+    caption: "Each set goes on the balance. Weighing every specimen is where the linear mass-versus-pass-count relation comes from &mdash; it is measured, not inferred from the winding program."
+    caption_zh: "每一组都要上天平。质量与道数的线性关系正是这样一件件称出来的——它是实测结果，而不是从缠绕程序推算出来的。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/avian-morphing-wound-humerus-bones.jpg' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="Four filament-wound humerus bone specimens at increasing reinforcement levels">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Wound &ldquo;bones&rdquo;, 1&ndash;4&times; passes</span><span class="lang-zh" lang="zh">缠绕成型的&ldquo;骨骼&rdquo;（1&ndash;4&times; 道数）</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">Filament-wound humerus specimens at four reinforcement levels; deposited mass scales linearly with pass count (R&sup2;&nbsp;=&nbsp;0.997).</span><span class="lang-zh" lang="zh">四种加强等级的肱骨试样；沉积质量随缠绕道数线性增加（R&sup2;&nbsp;=&nbsp;0.997）。</span></p>

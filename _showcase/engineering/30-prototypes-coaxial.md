@@ -1,14 +1,21 @@
 ---
 show: true
-width: 6
+width: 4
 date: 2026-04-03 00:01:00 +0800
 group: Prototypes &amp; Iterations
+images:
+  - src: /assets/images/covers/wraptor-coaxial-joint-prototypes.png
+    alt: "Several coaxial joint prototypes wound at different member thicknesses"
+  - src: /assets/images/covers/wraptor-coaxial-joint-winding-sequence.webp
+    alt: "Two-panel diagram of the winding sequence: one continuous tow path numbered 1 to 6 from start to end, and the finished bracing pattern after three repeats"
+    caption: "The winding sequence. One continuous tow runs 1&rarr;6 around the jig posts and comes back to where it started, so the pattern closes and can simply be repeated &mdash; which is what makes the pass count a design dial rather than a new layup."
+    caption_zh: "缠绕顺序。一根连续纤维束沿 1&rarr;6 绕过工装立柱后回到起点，路径自身闭合、因而可以直接重复——这正是缠绕道数能成为一个设计旋钮、而不需要重新设计铺层的原因。"
+  - src: /assets/images/covers/wraptor-coaxial-joint-winder-bench.jpg
+    alt: "The 3D-printed winding jig mounted in an aluminium-extrusion frame on the bench, a partly wound coaxial joint on it and a drip tray underneath"
+    caption: "The same jig on the bench, part-way through a joint. The printed posts set where the tow turns, so the geometry in the drawing above is enforced by the tooling rather than by the operator's hand."
+    caption_zh: "同一套工装在工作台上，一个节点缠到一半。打印立柱决定了纤维在哪里转向——上图那套几何是由工装保证的，而不是靠操作者的手感。"
 ---
 <div>
-    <img data-src="{{ 'assets/images/covers/wraptor-coaxial-joint-prototypes.png' | relative_url }}"
-         class="lazy w-100 rounded-xl"
-         src="{{ '/assets/images/empty_300x200.png' | relative_url }}"
-         alt="Several coaxial joint prototypes wound at different member thicknesses">
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Coaxial-joint prototypes</span><span class="lang-zh" lang="zh">同轴节点原型</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">The same joint wound at different member thicknesses &mdash; dialling in stiffness by changing only the number of winding passes.</span><span class="lang-zh" lang="zh">同一节点以不同杆件厚度缠绕——仅靠改变缠绕道数来调定刚度。</span></p>
