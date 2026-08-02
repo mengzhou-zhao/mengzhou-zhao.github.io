@@ -4,12 +4,18 @@ width: 4
 date: 2026-04-01 00:01:00 +0800
 group: Prototypes &amp; Iterations
 images:
-  - src: /assets/images/covers/morphing-wing-cover-tpu-petg-printed.jpg
-    alt: "Single-print morphing wing cover as printed, green TPU corrugated skin transitioning to black PETG edges"
+  - src: /assets/images/covers/morphing-wing-skin-single-print-bed.jpg
+    alt: "The compliant morphing skin straight off the Bambu Lab build plate, the black aerofoil-section skin still sitting inside its printed white support cradle"
+    caption: "Straight off the build plate. The black compliant skin closes into a full aerofoil section in a single print, still held in the white printed cradle that supported it during the build."
+    caption_zh: "刚从打印床上下来。黑色柔性蒙皮在一次打印中闭合成完整的翼型剖面，此时仍卡在打印时用于支撑它的白色随形托架里。"
+  - src: /assets/images/covers/morphing-wing-skin-single-print-held.jpg
+    alt: "A gloved hand lifting the printed compliant skin clear of its support block, the thin black skin holding an open teardrop aerofoil loop"
+    caption: "Lifted clear by hand. Nothing is fastened or bonded &mdash; the skin holds its aerofoil loop as one continuous printed piece, thin enough to flex yet closed enough to keep the section."
+    caption_zh: "用手取下。全件无任何紧固与粘接——蒙皮以一个连续打印件的形态自持翼型闭环，既薄到可以弯曲，又能守住剖面形状。"
 ---
 <div>
     <div class="p-3">
-        <h5 class="card-title mb-1"><span class="lang-en" lang="en">Single-print morphing cover</span><span class="lang-zh" lang="zh">一次成型的变形盖板</span></h5>
+        <h5 class="card-title mb-1"><span class="lang-en" lang="en">Single-print compliant skin</span><span class="lang-zh" lang="zh">一次3D打印成型的柔性蒙皮</span></h5>
         <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A TPU corrugated skin and a PETG rigid frame co-printed as one part &mdash; no fasteners, no bonding, no assembly.</span><span class="lang-zh" lang="zh">TPU 波纹蒙皮与 PETG 刚性框架共打印为一个整件——无紧固件、无粘接、无装配。</span></p>
 
         <div class="build-log">
