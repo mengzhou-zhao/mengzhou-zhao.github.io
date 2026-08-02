@@ -25,6 +25,17 @@ summary: >-
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-unreinforced-detail.jpg" class="w-100 rounded-sm mb-1" alt="Close-up of an unreinforced coaxial joint node: the wound tow meets the joint tube through a resin-only bond">
+      <div class="small text-center text-muted">Unreinforced node: a resin-only bond at the tube</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-reinforced-detail.jpg" class="w-100 rounded-sm mb-1" alt="Close-up of a reinforced coaxial joint node: epoxy-wetted carbon tow lashed circumferentially around the joint tube and members">
+      <div class="small text-center text-muted">Reinforced node: carbon tow lashed on to bridge the bond</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
       <img src="/assets/images/covers/wraptor-coaxial-joint-jig.jpg" class="w-100 rounded-sm mb-1" alt="Bonding jig for the coaxial joint tensile test specimens">
       <div class="small text-center text-muted">Bonding jig for the test specimens</div>
     </div>
@@ -41,6 +52,17 @@ summary_zh: >-
   </div>
 
   针对纤维缠绕 WrapToR 同轴桁架节点的拉伸试验研究，重点关注粘接节点处节点管与缠绕纤维束之间的脱粘失效模式。试验尝试了一种简单的加强方式——将浸润环氧的碳纤维束沿周向捆扎缠绕在节点管与杆件上，为原本仅靠树脂的粘接界面提供纤维桥接。每种构型取三个试样，结果显示加强后的节点平均拉伸失效载荷提高了 31.6%（2.73 kN &rarr; 4.00 kN），失效载荷离散度从 11.2% 降至 2.1%，表明纤维加强是强化并降低该粘接连接风险的有效手段。
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-unreinforced-detail.jpg" class="w-100 rounded-sm mb-1" alt="Close-up of an unreinforced coaxial joint node: the wound tow meets the joint tube through a resin-only bond">
+      <div class="small text-center text-muted">未加强节点：杆件与节点管之间仅靠树脂粘接</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/wraptor-coaxial-joint-reinforced-detail.jpg" class="w-100 rounded-sm mb-1" alt="Close-up of a reinforced coaxial joint node: epoxy-wetted carbon tow lashed circumferentially around the joint tube and members">
+      <div class="small text-center text-muted">加强节点：浸润环氧的碳纤维束周向捆扎，桥接粘接界面</div>
+    </div>
+  </div>
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
