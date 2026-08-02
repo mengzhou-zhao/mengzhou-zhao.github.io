@@ -25,8 +25,22 @@ summary: >-
 
   <div class="row mt-2 no-gutters">
     <div class="col-12">
+      <img src="/assets/images/covers/wraptor-tjoint-assembly-alignment-tools.webp" class="w-100 rounded-sm mb-1" alt="CAD assembly view of the three truss beams meeting at the wound T-joint, held by Y-shaped concentric and right-angle alignment tools on the CFRP tubes">
+      <div class="small text-center text-muted">Assembly jigging: Y-shaped concentric and right-angle alignment tools hold the geometry while the joint is wound</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
       <img src="/assets/images/covers/wraptor-tjoint-rig-installed.jpg" class="w-100 rounded-sm mb-1" alt="The WrapToR T-jointed carbon-fibre substructure installed in the cantilever rig under the INSTRON 8872 load cell, with the separate unloaded LVDT reference frame mounted below">
       <div class="small text-center text-muted">The substructure installed in the rig; the unloaded LVDT reference frame sits below</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/wraptor-tjoint-fe-boundary-conditions.webp" class="w-100 rounded-sm mb-1" alt="Finite-element model of the T-jointed substructure coloured by axial strain, with the load applied at the free end and both far ends constrained in all directions">
+      <div class="small text-center text-muted">The FE model behind the prediction: load at the free end, both far ends fully constrained, members coloured by axial strain</div>
     </div>
   </div>
 
@@ -51,8 +65,22 @@ summary_zh: >-
 
   <div class="row mt-2 no-gutters">
     <div class="col-12">
+      <img src="/assets/images/covers/wraptor-tjoint-assembly-alignment-tools.webp" class="w-100 rounded-sm mb-1" alt="CAD assembly view of the three truss beams meeting at the wound T-joint, held by Y-shaped concentric and right-angle alignment tools on the CFRP tubes">
+      <div class="small text-center text-muted">装配工装：Y 形同心对准件与直角对准件在缠绕节点时固定住整体几何</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
       <img src="/assets/images/covers/wraptor-tjoint-rig-installed.jpg" class="w-100 rounded-sm mb-1" alt="The WrapToR T-jointed carbon-fibre substructure installed in the cantilever rig under the INSTRON 8872 load cell, with the separate unloaded LVDT reference frame mounted below">
       <div class="small text-center text-muted">装夹于台架上的子结构；下方为独立不承载的 LVDT 参考框架</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/wraptor-tjoint-fe-boundary-conditions.webp" class="w-100 rounded-sm mb-1" alt="Finite-element model of the T-jointed substructure coloured by axial strain, with the load applied at the free end and both far ends constrained in all directions">
+      <div class="small text-center text-muted">支撑预测的有限元模型：自由端加载，两个远端全方向约束，杆件按轴向应变着色</div>
     </div>
   </div>
 

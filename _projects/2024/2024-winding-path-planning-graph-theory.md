@@ -25,6 +25,24 @@ summary: >-
 
   This work is the computational counterpart to the winding processes developed earlier in this series: those established that a whole truss joint <em>could</em> be built in one continuous wind; this one answers how to decide, automatically, what that wind should be for any joint you are asked to make.
 
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-graph-axial-selection.webp" class="w-100 rounded-sm mb-1" alt="Graph of the joint with every candidate connection drawn in light blue and the selected axial members highlighted in red">
+      <div class="small text-center text-muted">The joint as a graph: every candidate connection in blue, the selected members in red &mdash; the search space a planner has to work in</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/winding-path-planning-tjoint-layers.webp" class="w-100 rounded-sm mb-1" alt="Planned winding path on a T-joint, each winding layer drawn in a different colour over a ghost of the joint tubes">
+      <div class="small text-center text-muted">Planned path on a T-joint, coloured by layer</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/winding-path-planning-crossjoint-layers.webp" class="w-100 rounded-sm mb-1" alt="Planned winding path on a four-way cross joint, each winding layer drawn in a different colour over a ghost of the joint tubes">
+      <div class="small text-center text-muted">The same planner on a four-way cross joint</div>
+    </div>
+  </div>
+
   <p class="mt-2 mb-0 font-italic">Manuscript in preparation &mdash; methodology and results will be shared once the paper is published.</p>
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
@@ -34,6 +52,24 @@ summary_zh: >-
   </div>
 
   这项工作是本系列中此前那些缠绕工艺的"计算侧对应物"：那些工作证明了一个完整的桁架节点<em>能够</em>在一次连续缠绕中做出来；而这项工作回答的是——面对任意一个要求做的节点，如何自动决定这一次缠绕究竟该怎么走。
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-graph-axial-selection.webp" class="w-100 rounded-sm mb-1" alt="Graph of the joint with every candidate connection drawn in light blue and the selected axial members highlighted in red">
+      <div class="small text-center text-muted">把节点抽象成图：蓝色是全部候选连接，红色是被选中的杆件——这就是路径规划要面对的搜索空间</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-6 pr-1">
+      <img src="/assets/images/covers/winding-path-planning-tjoint-layers.webp" class="w-100 rounded-sm mb-1" alt="Planned winding path on a T-joint, each winding layer drawn in a different colour over a ghost of the joint tubes">
+      <div class="small text-center text-muted">T 形节点的规划路径，按缠绕层着色</div>
+    </div>
+    <div class="col-6 pl-1">
+      <img src="/assets/images/covers/winding-path-planning-crossjoint-layers.webp" class="w-100 rounded-sm mb-1" alt="Planned winding path on a four-way cross joint, each winding layer drawn in a different colour over a ghost of the joint tubes">
+      <div class="small text-center text-muted">同一套规划器用在四向十字节点上</div>
+    </div>
+  </div>
 
   <p class="mt-2 mb-0 font-italic">论文撰写中 &mdash; 方法与结果将在论文发表后公布。</p>
 ---
