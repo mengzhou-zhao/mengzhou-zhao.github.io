@@ -5,7 +5,7 @@ date:       2024-09-01 00:01:00 +0800
 selected:   true
 role:       "PhD Research"
 role_zh:    "博士研究"
-cover:      /assets/images/covers/wraptor-tjoint-winding-new.jpg
+cover:      /assets/images/covers/wraptor-tjoint-wetting-system-cover.png
 tags:
   - Composites
   - Filament Winding
@@ -29,15 +29,22 @@ summary: >-
       <div class="small text-center text-muted">"Tow-catching" defect, original process</div>
     </div>
     <div class="col-6 pl-1">
-      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
-      <div class="small text-center text-muted">The redesigned wetting system mounted on the winder</div>
+      <img src="/assets/images/covers/wraptor-tjoint-tow-defect-free-new.jpg" class="w-100 rounded-sm mb-1" alt="The same style of wound truss produced with the redesigned wetting system, the tow running clean and even with no resin blobs">
+      <div class="small text-center text-muted">Same members, redesigned process: clean, even tow</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12 text-center">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="rounded-sm mb-1" style="width: 60%;" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
+      <div class="small text-center text-muted">Section: tow wheel, PTFE guide tube, ceramic eyelet</div>
     </div>
   </div>
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
-      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="w-100 rounded-sm mb-1" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
-      <div class="small text-center text-muted">Section: tow wheel, PTFE guide tube, ceramic eyelet</div>
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
+      <div class="small text-center text-muted">The redesigned wetting system mounted on the winder</div>
     </div>
     <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-tjoint-tga-comparison.png" class="w-100 rounded-sm mb-1" alt="Thermogravimetric analysis mass loss curves comparing old and new winding process samples">
@@ -70,15 +77,22 @@ summary_zh: >-
       <div class="small text-center text-muted">“捕束”缺陷，原工艺</div>
     </div>
     <div class="col-6 pl-1">
-      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
-      <div class="small text-center text-muted">装于缠绕机上的再设计浸润系统</div>
+      <img src="/assets/images/covers/wraptor-tjoint-tow-defect-free-new.jpg" class="w-100 rounded-sm mb-1" alt="The same style of wound truss produced with the redesigned wetting system, the tow running clean and even with no resin blobs">
+      <div class="small text-center text-muted">同类杆件，新工艺：纤维束光洁均匀、无“捕束”</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12 text-center">
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="rounded-sm mb-1" style="width: 60%;" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
+      <div class="small text-center text-muted">剖面：导轮、PTFE 导管、陶瓷导丝眼</div>
     </div>
   </div>
 
   <div class="row mt-2 no-gutters">
     <div class="col-6 pr-1">
-      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-section.png" class="w-100 rounded-sm mb-1" alt="Labelled CAD cross-section of the redesigned tow-wetting system, showing the resin bath, tow wheel, 0.5 mm PTFE guide tube and ceramic eyelet at the exit">
-      <div class="small text-center text-muted">剖面：导轮、PTFE 导管、陶瓷导丝眼</div>
+      <img src="/assets/images/covers/wraptor-tjoint-wetting-system-rig.jpg" class="w-100 rounded-sm mb-1" alt="The 3D-printed resin bath with tow wheel and PTFE guide tube mounted on the winding rig, the carbon tow running out through the ceramic eyelet">
+      <div class="small text-center text-muted">装于缠绕机上的再设计浸润系统</div>
     </div>
     <div class="col-6 pl-1">
       <img src="/assets/images/covers/wraptor-tjoint-tga-comparison.png" class="w-100 rounded-sm mb-1" alt="Thermogravimetric analysis mass loss curves comparing old and new winding process samples">
