@@ -3,6 +3,8 @@ title:          "WrapToR composite truss joints: Concept introduction and coaxia
 title_zh:       "WrapToR 复合材料桁架连接节点：概念提出与同轴节点的分析及验证"
 date:           2025-01-01 00:01:00 +0800
 selected:       true
+type:           "Journal article"
+type_zh:        "期刊论文"
 pub:            "Composites Part A: Applied Science and Manufacturing"
 pub_post:       ", 188, 108573."
 pub_last:       "<span class='badge badge-pill badge-success'>Open Access</span>"

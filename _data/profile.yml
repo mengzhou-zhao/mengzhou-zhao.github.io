@@ -1,5 +1,5 @@
 primary_name: "Mengzhou Zhao"
-# primary_name_zh: 赵孟舟   # <-- OPTIONAL: uncomment and set your preferred Chinese name; falls back to the English name if left blank
+primary_name_zh: 赵梦舟
 secondary_name: ""
 navbar_name: "Mengzhou Zhao"
 
@@ -25,25 +25,31 @@ orcid: 0009-0004-2685-7579
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Research Associate in Aerospace Engineering at the University of Bristol, affiliated with the Bristol Composites Institute, where I recently completed my PhD. I work on hard engineering problems that refuse to stay in a single discipline &mdash; where geometry, materials, manufacturing, and structural performance are tightly coupled and cannot be optimised in isolation. My research on filament-wound composite joints for modular truss structures sits exactly at that intersection, targeting lightweight aerospace systems.
+    I am a Research Associate at the University of Bristol, where I also completed my PhD in Aerospace Engineering at the Bristol Composites Institute. I design <strong>lightweight structures</strong>: my job is to turn aerodynamic and kinematic requirements into structures that can actually be manufactured, validated, and loaded. I am building towards eVTOL and the low-altitude economy, commercial space, and intelligent robotics.
   </p>
   <p>
-    I am drawn to problems with many interacting dimensions and a large design space, and I enjoy reframing them so they become tractable. A central example is my work on automated three-dimensional filament winding path planning, where I extended graph-theoretical methods to simultaneously satisfy spatial constraints, fibre continuity, and manufacturability &mdash; turning what had been a manual, trial-and-error craft into a systematic, computationally driven design process.
+    My work sits where geometry, materials, manufacturing, and structural performance are tightly coupled and cannot be optimised in isolation &mdash; structural mechanics, composite processing, mechanism kinematics, algorithm development, and mechanical testing. I am used to running that loop end to end on my own, from defining the requirement to validating it on a rig, and the equipment and tooling I need are usually ones I have built and commissioned myself. Conclusions that matter get checked against physical data: simulation is where the work starts, not where it stops.
   </p>
   <p>
-    My strength lies in moving fluidly across the full engineering workflow and connecting the pieces: CAD and geometric modelling, nonlinear finite element analysis, structural optimisation, bespoke winding-rig and equipment design, and experimental validation through mechanical testing. I combine computational modelling with hands-on manufacturing and characterisation, so that analysis, fabrication, and physical evidence inform one another. More broadly, my interests span continuous-fibre composite processes, analysis-driven design, and optimisation for lightweight structures.
+    I also prefer to replace repetitive manual work with algorithms and automation &mdash; parametric modelling, optimisation, and AI agents taking over the repeated steps in modelling, simulation, and data handling. The point is not personal speed but a reusable digital workflow that shortens the design iteration cycle for the whole team, with the engineering judgement staying human.
+  </p>
+  <p>
+    A recurring theme in my work is taking on tasks that have stalled and carrying them through to something real. The projects below record how that has gone.
   </p>
 
 # Chinese version of the bio shown when the site is in Chinese mode.
 short_bio_zh: >-
   <p>
-    我是布里斯托大学（University of Bristol）航空航天工程专业的研究员，隶属布里斯托复合材料研究所（Bristol Composites Institute），并于近期在此完成博士学位。我专注于那些无法被单一学科框定的工程难题——在这类问题中，几何、材料、制造工艺与结构性能彼此紧密耦合，无法孤立地各自优化。我关于模块化桁架结构中纤维缠绕复合材料连接节点的研究，正处在这一交叉点上，面向轻量化航空航天系统。
+    我是赵梦舟，英国布里斯托大学（University of Bristol）航空航天工程博士，毕业于布里斯托复合材料研究院，目前在该校任研究员（博士后）。我做的是<strong>轻量化结构设计</strong>：把气动与运动需求，翻译成造得出来、验得了、扛得住载荷的结构方案。面向低空经济 / eVTOL、商业航天与智能机器人等先进装备领域。
   </p>
   <p>
-    我尤其着迷于那些维度众多、彼此影响且设计空间庞大的问题，并乐于对它们重新建构，使其变得可解。一个典型例子是我在自动化三维纤维缠绕路径规划方面的工作：我拓展了图论方法，使其能够同时满足空间约束、纤维连续性与可制造性——将原本依赖手工、反复试错的工艺，转化为一套系统化、由计算驱动的设计流程。
+    我处理的问题通常无法被单一学科框定——几何、材料、制造工艺与结构性能彼此紧密耦合，无法孤立地各自优化。工作横跨结构力学、复合材料工艺、机构运动学、算法开发与实验测试，我习惯独立走完从需求定义到实验验证的全流程；所需的设备、工装与试验台架多由本人搭建与调试，关键结论都经过实测校核。仿真是工作的起点，而不是终点。
   </p>
   <p>
-    我的长处在于能够在完整的工程流程中自如穿梭，并将各个环节串联起来：CAD 与几何建模、非线性有限元分析、结构优化、定制缠绕装置与设备设计，以及通过力学测试进行的实验验证。我把计算建模与亲手参与的制造和表征结合起来，让分析、制造与实物证据彼此印证、相互启发。更广义地说，我的研究兴趣涵盖连续纤维复合材料工艺、以分析驱动的设计，以及面向轻量化结构的优化。
+    我也习惯用算法与自动化替代重复人工：以参数化建模、优化算法与 AI Agent 承担建模、仿真与数据处理中的重复环节。目的不是个人手速，而是把它沉淀为可复用的数字化研发流程，缩短团队的方案迭代周期——工程判断与方案决策仍由人主导。
+  </p>
+  <p>
+    我做结构追求"更轻、更强、可制造"，而非纸面最优解；接手的任务不论是否属于原定职责，都会推进到能落地的状态。下面的项目记录了这些工作的具体过程与结果。
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg

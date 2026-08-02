@@ -4,9 +4,17 @@
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> {% include i18n.html en="Selected Projects" zh="精选项目" %}{% endif %}
         <a href="{{ 'projects' | relative_url }}">({% include i18n.html en="view all" zh="查看全部" %} <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
+    {% if include.compact %}
+    <div class="row no-gutters project-tile-grid p-3 pb-0">
+        {% for item in projects limit:include.limit %}
+            {% include widgets/project_item_compact.html item=item %}
+        {% endfor %}
+    </div>
+    {% else %}
     {% for item in projects limit:include.limit %}
         {% include widgets/project_item.html item=item first=false last=false %}
     {% endfor %}
+    {% endif %}
     <h6 class="d-block p-3 mt-0 text-right">
         <a href="{{ 'projects' | relative_url }}">{% include i18n.html en="All projects" zh="全部项目" %} <i class="fas fa-angle-double-right"></i></a>
     </h6>

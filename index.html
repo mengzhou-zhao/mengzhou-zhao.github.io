@@ -26,6 +26,7 @@ navbar_title: Home
     {%
         include widgets/project_card.html
         projects=projs
+        compact=true
         title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Projects</span><span class="lang-zh" lang="zh">精选项目</span>'
     %}
 {% endif %}
@@ -35,6 +36,6 @@ navbar_title: Home
     {%
         include widgets/publication_card.html
         publications=pubs
-        title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Publications</span><span class="lang-zh" lang="zh">精选论文</span>'
+        title='<i class="fas fa-star"></i> <span class="lang-en" lang="en">Selected Research Output</span><span class="lang-zh" lang="zh">精选学术成果</span>'
     %}
 {% endif %}

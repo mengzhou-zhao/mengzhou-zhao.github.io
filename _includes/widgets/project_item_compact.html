@@ -1,0 +1,24 @@
+{% comment %}
+    Compact project tile for the homepage: thumbnail + title only.
+    The full Problem / Role / Impact write-up lives on the projects page, so the
+    homepage stays scannable and the tile is just the door into the detail.
+{% endcomment %}
+{% assign item = include.item %}
+<div class="col-12 col-sm-6 col-lg-4 mb-3">
+    <a class="project-tile" href="{{ 'projects' | relative_url }}#{{ item.id | slugify }}">
+        <div class="project-tile-thumb">
+            {%- if item.cover -%}
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            {%- else -%}
+            <svg class="bubble-visual-hash lazy" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
+            {%- endif -%}
+        </div>
+        <div class="project-tile-body">
+            <div class="project-tile-title">{% include i18n.html en=item.title zh=item.title_zh %}</div>
+            <div class="project-tile-meta">
+                {% if item.role %}{% include i18n.html en=item.role zh=item.role_zh %}{% endif %}
+                {% if item.date %} &middot; {{ item.date | date: "%Y" }}{% endif %}
+            </div>
+        </div>
+    </a>
+</div>

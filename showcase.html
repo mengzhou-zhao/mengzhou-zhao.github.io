@@ -1,7 +1,7 @@
 ---
 layout: default
-title : Showcase
-navbar_title: Showcase
+title : Engineering Practice
+navbar_title: Engineering
 container_class: container-xl
 ---
 
@@ -9,7 +9,27 @@ container_class: container-xl
 {% assign cards_by_group = shown_cards | sort: "date" | reverse | group_by_exp: "item", "item.group" %}
 
 {% for group in cards_by_group %}
-<h1><span class="lang-en" lang="en">{{ group.name }}</span><span class="lang-zh" lang="zh">{% case group.name %}{% when 'Engineering, Hands-On' %}亲手做的工程{% when 'Custom Test Equipment' %}自制实验设备{% when 'Tooling &amp; 3D-Printed Parts' %}工装与 3D 打印件{% when 'Prototypes &amp; Iterations' %}原型与迭代{% when 'Failures &amp; Lessons' %}失败与教训{% else %}{{ group.name }}{% endcase %}</span></h1>
+<h1 class="mb-1"><span class="lang-en" lang="en">{{ group.name }}</span><span class="lang-zh" lang="zh">{% case group.name %}{% when 'Engineering, Hands-On' %}亲手做的工程{% when 'Custom Test Equipment' %}自制实验设备{% when 'Tooling &amp; 3D-Printed Parts' %}工装与 3D 打印件{% when 'Prototypes &amp; Iterations' %}原型与迭代{% when 'Failures &amp; Lessons' %}失败与教训{% else %}{{ group.name }}{% endcase %}</span></h1>
+{%- case group.name -%}
+{%- when 'Custom Test Equipment' -%}
+    {%- assign group_sub_en = "Every experiment on this site ran on a rig I designed and built. The hard part is never the frame &mdash; it is proving that what you measured is the structure and not the rig." -%}
+    {%- assign group_sub_zh = "本站的每一项试验，都跑在我自己设计并搭建的台架上。难点从来不是把框架搭起来，而是证明你测到的是结构本身、而不是台架。" -%}
+{%- when 'Tooling &amp; 3D-Printed Parts' -%}
+    {%- assign group_sub_en = "Small parts that decide whether a process exists at all. Each one exists because a variable was out of control and had to be designed out rather than practised away." -%}
+    {%- assign group_sub_zh = "决定一套工艺能否成立的小零件。它们之所以存在，是因为某个变量失了控——而失控的变量要靠设计消掉，不能靠练习绕过。" -%}
+{%- when 'Prototypes &amp; Iterations' -%}
+    {%- assign group_sub_en = "Hardware made to answer a specific question: can stiffness be a design variable instead of a new mould? Is a hand process actually repeatable? Each series was wound or printed to settle one of those." -%}
+    {%- assign group_sub_zh = "为回答某个具体问题而做出来的实物：刚度能不能成为设计变量、而不是一副新模具？手工工艺到底可不可复现？每一组样件，都是为了把其中一个问题钉死。" -%}
+{%- when 'Failures &amp; Lessons' -%}
+    {%- assign group_sub_en = "The most useful pages of the log. Each of these cost time &mdash; and each one changed a process, a model or a design rule. I keep them because the reasoning out of a failure is worth more than a clean photograph." -%}
+    {%- assign group_sub_zh = "日志里最有价值的几页。每一次都付出了时间代价——也每一次都改变了一道工艺、一个模型或一条设计准则。我把它们留着，因为「从失败里走出来的推理」比一张漂亮照片值钱得多。" -%}
+{%- else -%}
+    {%- assign group_sub_en = "" -%}
+    {%- assign group_sub_zh = "" -%}
+{%- endcase -%}
+{% if group_sub_en != "" %}
+<p class="text-muted mb-3" style="max-width: 46rem;"><span class="lang-en" lang="en">{{ group_sub_en }}</span><span class="lang-zh" lang="zh">{{ group_sub_zh }}</span></p>
+{% endif %}
 <div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}

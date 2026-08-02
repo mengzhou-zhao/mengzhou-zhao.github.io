@@ -3,6 +3,8 @@ title:          "Multi-Material Additive Manufacturing of a Zero-Poisson-Ratio-C
 title_zh:       "零泊松比芯层变形机翼蒙皮的多材料增材制造：设计与铰链级验证"
 date:           2026-07-03 00:01:00 +0800
 selected:       false
+type:           "Journal article"
+type_zh:        "期刊论文"
 pub:            "In preparation"
 pub_zh:         "撰写中"
 cover:          /assets/images/covers/morphing-wing-cover-tpu-petg-printed.jpg

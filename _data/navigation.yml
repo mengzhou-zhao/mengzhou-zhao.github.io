@@ -8,9 +8,11 @@ pages:
 - name: Projects
   name_zh: 项目经历
   url: /projects
-- name: Publications
-  name_zh: 论文发表
+# English nav labels are kept short so the inline navbar still fits the
+# container at the `md` breakpoint; the full names live in each page's `title`.
+- name: Research
+  name_zh: 学术成果
   url: /publications
-- name: Showcase
-  name_zh: 工程展示
+- name: Engineering
+  name_zh: 工程实践
   url: /showcase
