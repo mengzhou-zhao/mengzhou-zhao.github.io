@@ -6,11 +6,24 @@
 (function () {
     'use strict';
 
+    // The full-size cover inside the detail is only worth its bytes once the
+    // row is actually open; jQuery.Lazy skips it because a collapsed row has no
+    // height, so the swap happens here instead.
+    function loadCover(row) {
+        Array.prototype.forEach.call(row.querySelectorAll('img[data-cover-src]'), function (img) {
+            img.src = img.getAttribute('data-cover-src');
+            img.removeAttribute('data-cover-src');
+        });
+    }
+
     function setOpen(row, open) {
         row.classList.toggle('is-open', open);
         var head = row.querySelector('.project-row-head');
         if (head) {
             head.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        if (open) {
+            loadCover(row);
         }
     }
 

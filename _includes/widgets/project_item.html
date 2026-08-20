@@ -34,6 +34,17 @@
     <div class="project-row-detail">
         <div class="project-row-detail-inner">
             <div class="project-row-detail-body">
+                {%- comment -%}
+                    The head thumbnail is 148px of identification, not something
+                    a reader can actually look at. Unfolding the row repeats the
+                    cover large -- unless the write-up already shows that same
+                    image further down, in which case one printing is enough.
+                {%- endcomment -%}
+                {%- if item.cover -%}{%- unless item.summary contains item.cover -%}
+                <figure class="project-row-cover">
+                    <img data-cover-src="{{ item.cover | relative_url }}" alt="{{ item.title | escape }}">
+                </figure>
+                {%- endunless -%}{%- endif -%}
                 <div class="small text-muted lang-en">{{ item.summary }}</div>
                 <div class="small text-muted lang-zh">{{ item.summary_zh | default: item.summary }}</div>
 
