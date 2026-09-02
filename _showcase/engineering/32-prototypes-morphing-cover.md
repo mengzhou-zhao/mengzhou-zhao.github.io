@@ -16,7 +16,7 @@ images:
 <div>
     <div class="p-3">
         <h5 class="card-title mb-1"><span class="lang-en" lang="en">Single-print compliant skin</span><span class="lang-zh" lang="zh">一次3D打印成型的柔性蒙皮</span></h5>
-        <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A TPU compliant skin and a PETG rigid frame co-printed as one part &mdash; no fasteners, no bonding, no assembly.</span><span class="lang-zh" lang="zh">TPU 柔性蒙皮与 PETG 刚性框架共打印为一个整件——无紧固件、无粘接、无装配。</span></p>
+        <p class="card-text text-muted mb-0 small"><span class="lang-en" lang="en">A TPU compliant skin and a PETG-CF rigid frame co-printed as one part &mdash; no fasteners, no bonding, no assembly.</span><span class="lang-zh" lang="zh">TPU 柔性蒙皮与 PETG-CF 刚性框架共打印为一个整件——无紧固件、无粘接、无装配。</span></p>
 
         <div class="build-log">
             <div class="build-log-row">
@@ -29,7 +29,7 @@ images:
             </div>
             <div class="build-log-row">
                 <div class="build-log-key"><span class="lang-en" lang="en">Call</span><span class="lang-zh" lang="zh">取舍</span></div>
-                <div class="build-log-val"><span class="lang-en" lang="en">Two decisions, one about material and one about <em>orientation</em>. Co-print TPU and PETG contiguously so load crosses a <strong>graded boundary rather than a glue line</strong>; then print the part <strong>standing on its edge</strong> so the layer lines run <em>along</em> the flexing direction instead of across it.</span><span class="lang-zh" lang="zh">两个决定，一个关于材料，一个关于<em>摆放方向</em>。让 TPU 与 PETG 连续共打印，使载荷跨越一条<strong>梯度界面而非胶接线</strong>；再把零件<strong>侧立打印</strong>，让层线<em>顺着</em>弯曲方向排布，而不是横穿它。</span></div>
+                <div class="build-log-val"><span class="lang-en" lang="en">Two decisions, one about material and one about <em>orientation</em>. Co-print TPU and PETG-CF contiguously so load crosses a <strong>graded boundary rather than a glue line</strong>; then print the part <strong>standing on its edge</strong> so the layer lines run <em>along</em> the flexing direction instead of across it.</span><span class="lang-zh" lang="zh">两个决定，一个关于材料，一个关于<em>摆放方向</em>。让 TPU 与 PETG-CF 连续共打印，使载荷跨越一条<strong>梯度界面而非胶接线</strong>；再把零件<strong>侧立打印</strong>，让层线<em>顺着</em>弯曲方向排布，而不是横穿它。</span></div>
             </div>
             <div class="build-log-row">
                 <div class="build-log-key"><span class="lang-en" lang="en">Proof</span><span class="lang-zh" lang="zh">验证</span></div>
