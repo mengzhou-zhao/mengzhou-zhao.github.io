@@ -43,6 +43,20 @@ summary: >-
     </div>
   </div>
 
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-joint-family.jpg" class="w-100 rounded-sm mb-1" alt="A family of filament-wound carbon-fibre joints of different topologies laid out together, from branching three- and four-member nodes through to fully closed polyhedral ones">
+      <div class="small text-center text-muted">The planner&rsquo;s output, made real: joints of very different topologies &mdash; branching nodes through to fully closed polyhedral ones &mdash; every one planned by the same algorithm and wound in continuous tow. Generality is the whole point: no new path invented by hand for each new geometry</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-cross-joint-airframe.jpg" class="w-100 rounded-sm mb-1" alt="A quadcopter airframe built around a filament-wound four-way cross joint, its four truss arms radiating from the wound central node">
+      <div class="small text-center text-muted">The same four-way cross joint, built out into a quadrotor airframe &mdash; central node and four truss arms wound as one continuous structure. This is what the capability is for: a usable airframe that came out of the planner rather than out of an engineer&rsquo;s hands</div>
+    </div>
+  </div>
+
   <p class="mt-2 mb-0 font-italic">Manuscript in preparation &mdash; methodology and results will be shared once the paper is published.</p>
 summary_zh: >-
   <div class="mb-3 pl-3" style="border-left: 3px solid #ced4da;">
@@ -68,6 +82,20 @@ summary_zh: >-
     <div class="col-6 pl-1">
       <img src="/assets/images/covers/winding-path-planning-crossjoint-layers.webp" class="w-100 rounded-sm mb-1" alt="Planned winding path on a four-way cross joint, each winding layer drawn in a different colour over a ghost of the joint tubes">
       <div class="small text-center text-muted">同一套规划器用在四向十字节点上</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-joint-family.jpg" class="w-100 rounded-sm mb-1" alt="A family of filament-wound carbon-fibre joints of different topologies laid out together, from branching three- and four-member nodes through to fully closed polyhedral ones">
+      <div class="small text-center text-muted">规划结果被真正做了出来：从分叉型节点到完全闭合的多面体节点，拓扑差异极大的一族实物——全部由同一套算法规划、以连续纤维束缠绕成型。通用性正是关键所在：不必再为每一种新几何用手去&ldquo;想&rdquo;出一条路径</div>
+    </div>
+  </div>
+
+  <div class="row mt-2 no-gutters">
+    <div class="col-12">
+      <img src="/assets/images/covers/winding-path-planning-cross-joint-airframe.jpg" class="w-100 rounded-sm mb-1" alt="A quadcopter airframe built around a filament-wound four-way cross joint, its four truss arms radiating from the wound central node">
+      <div class="small text-center text-muted">同一个四向十字节点，做成了一副四旋翼无人机机架——中央节点与四条桁架臂缠绕成一个连续的整体。这正是这项能力的用途：一副能直接用起来的机架，出自规划器，而不是出自工程师的手</div>
     </div>
   </div>
 
