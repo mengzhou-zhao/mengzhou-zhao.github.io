@@ -1,6 +1,6 @@
 # Warm engineering portfolio — interactive preview
 
-Standalone, dependency-free prototype. Open through a local HTTP server from the repository root at `/_preview/`. No production templates or content are changed. Jekyll excludes underscore-prefixed directories by default; do not add this directory to its `include` setting.
+Standalone, dependency-free prototype. Open through a local HTTP server from the repository root at `/_preview/`. The approved warm-modern version is now exported to the production homepage. Jekyll excludes underscore-prefixed directories by default; do not add this directory to its `include` setting.
 
 ## Preview
 
@@ -33,4 +33,8 @@ Remote tag: `backup-before-card-redesign-2026-09-23`
 
 Commit: `6c504181374846592645fdea52bb817e6427cf52`
 
-To discard only this prototype, remove `_preview/`; production source files are untouched. Do not reset the whole repository if it contains subsequent unrelated work.
+Removing `_preview/` does not revert the published homepage. To restore the previous homepage, restore `index.html` from the baseline tag and commit that change. Do not reset the whole repository if it contains subsequent unrelated work.
+
+## Publish updates
+
+Run `python _preview/sync_projects.py` when source records change, then `python _preview/publish_homepage.py` to refresh `index.html` and `assets/portfolio/`. Run `bundle exec jekyll build` before committing. The production page omits preview-only noindex metadata. The selected typography is Georgia for Latin headings with Microsoft YaHei and platform sans-serif fallbacks for Chinese.
