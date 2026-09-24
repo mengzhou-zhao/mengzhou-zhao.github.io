@@ -87,6 +87,7 @@ const projects = [
 projects.push(...additionalProjects);
 projects.sort((a,b)=>Number(b.year)-Number(a.year));
 let lang='zh', filter='all', step=0, activeProject=null, slide=0;
+let sourceCard=null, caseAnimating=false;
 const $=selector=>document.querySelector(selector);
 const dialog=$('#case-dialog');
 const asset=file=>'/assets/images/covers/'+file;
@@ -147,6 +148,43 @@ function renderCase(){
   $('#next').textContent=slide===t.slides.length-1?copy[lang].done:copy[lang].next;
   $('#slide-status').textContent=`0${slide+1} / 0${t.slides.length}`;
 }
+const frame=()=>new Promise(resolve=>requestAnimationFrame(resolve));
+function cardImage(card){
+  if(!card)return null;
+  return card.matches('.hero-object')?card.querySelector('.hero-frame.is-active'):card.querySelector('.project-image img');
+}
+function imageClone(image,rect){
+  if(!image)return null;
+  const clone=image.cloneNode();
+  clone.className='case-transition-image';
+  Object.assign(clone.style,{left:`${rect.left}px`,top:`${rect.top}px`,width:`${rect.width}px`,height:`${rect.height}px`});
+  document.body.appendChild(clone);
+  return clone;
+}
+function sharedImageAnimation(image,from,to,duration,easing='cubic-bezier(.16,1,.3,1)'){
+  const clone=imageClone(image,from);
+  if(!clone)return Promise.resolve();
+  const dx=to.left-from.left,dy=to.top-from.top,sx=to.width/from.width,sy=to.height/from.height;
+  const animation=clone.animate([
+    {transform:'translate3d(0,0,0) scale(1)',borderRadius:'10px',filter:'saturate(.9)'},
+    {transform:`translate3d(${dx*.78}px,${dy*.78}px,0) scale(${1+(sx-1)*.78},${1+(sy-1)*.78})`,offset:.56},
+    {transform:`translate3d(${dx}px,${dy}px,0) scale(${sx},${sy})`,borderRadius:'7px',filter:'saturate(1)'}
+  ],{duration,easing,fill:'forwards'});
+  return animation.finished.catch(()=>{}).finally(()=>clone.remove());
+}
+async function openCase(card){
+  if(caseAnimating||dialog.open)return;
+  caseAnimating=true;sourceCard=card;
+  activeProject=projects.find(p=>p.id===card.dataset.project);slide=0;renderCase();
+  const sourceImage=cardImage(card),sourceRect=sourceImage?.getBoundingClientRect();
+  dialog.className='is-preparing';dialog.showModal();document.body.classList.add('dialog-open');
+  await frame();
+  const target=dialog.querySelector('.case-stage figure'),targetRect=target.getBoundingClientRect();
+  dialog.className=reduceMotion.matches?'is-open':'is-opening';
+  if(!reduceMotion.matches&&sourceRect)await sharedImageAnimation(sourceImage,sourceRect,targetRect,620);
+  else await new Promise(resolve=>setTimeout(resolve,120));
+  dialog.className='is-open';caseAnimating=false;
+}
 function render(){
   document.documentElement.lang=lang==='zh'?'zh-CN':'en';
   document.title=lang==='zh'?'赵梦舟 · Engineering in the making':'Mengzhou Zhao · Engineering in the making';
@@ -158,7 +196,7 @@ function render(){
 $('#language').addEventListener('click',()=>{lang=lang==='zh'?'en':'zh';render();});
 document.addEventListener('click',event=>{
   const card=event.target.closest('[data-project]');
-  if(card){activeProject=projects.find(p=>p.id===card.dataset.project);slide=0;renderCase();dialog.showModal();document.body.classList.add('dialog-open');}
+  if(card)openCase(card);
   const f=event.target.closest('[data-filter]');
   if(f){filter=f.dataset.filter;document.querySelectorAll('[data-filter]').forEach(el=>el.setAttribute('aria-pressed',el===f));renderProjects();}
   const s=event.target.closest('[data-step]');if(s){step=Number(s.dataset.step);renderStep();}
@@ -167,11 +205,28 @@ $('.process-tabs').addEventListener('keydown',event=>{
   const keys=['ArrowRight','ArrowLeft','Home','End'];if(!keys.includes(event.key))return;
   event.preventDefault();step=event.key==='Home'?0:event.key==='End'?2:(step+(event.key==='ArrowRight'?1:2))%3;renderStep();$(`#step-tab-${step}`).focus();
 });
-function closeCase(){dialog.close();}
+async function closeCase(){
+  if(caseAnimating||!dialog.open)return;
+  caseAnimating=true;
+  const sourceImage=cardImage(sourceCard);
+  const sourceRect=sourceImage?.isConnected?sourceImage.getBoundingClientRect():null;
+  const dialogRect=dialog.getBoundingClientRect();
+  if(sourceRect){
+    const originX=sourceRect.left+sourceRect.width/2-dialogRect.left;
+    const originY=sourceRect.top+sourceRect.height/2-dialogRect.top;
+    dialog.style.setProperty('--close-origin-x',`${originX}px`);
+    dialog.style.setProperty('--close-origin-y',`${originY}px`);
+  }
+  dialog.className=reduceMotion.matches?'is-closing-reduced':'is-closing';
+  await new Promise(resolve=>setTimeout(resolve,reduceMotion.matches?90:220));
+  dialog.close();dialog.className='';dialog.style.removeProperty('--close-origin-x');dialog.style.removeProperty('--close-origin-y');document.body.classList.remove('dialog-open');
+  caseAnimating=false;
+}
 $('#close-dialog').addEventListener('click',closeCase);
-dialog.addEventListener('close',()=>document.body.classList.remove('dialog-open'));
+dialog.addEventListener('cancel',event=>{event.preventDefault();closeCase();});
+dialog.addEventListener('close',()=>{document.body.classList.remove('dialog-open');caseAnimating=false;});
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closeCase();}});
-function moveSlide(delta){slide=Math.max(0,Math.min(activeProject[lang].slides.length-1,slide+delta));renderCase();dialog.scrollTop=0;if($('#previous').disabled&&document.activeElement===$('#previous'))$('#next').focus();}
+function moveSlide(delta){if(caseAnimating)return;slide=Math.max(0,Math.min(activeProject[lang].slides.length-1,slide+delta));renderCase();dialog.scrollTop=0;if($('#previous').disabled&&document.activeElement===$('#previous'))$('#next').focus();}
 $('#previous').addEventListener('click',()=>moveSlide(-1));
 $('#next').addEventListener('click',()=>slide===activeProject[lang].slides.length-1?closeCase():moveSlide(1));
 dialog.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();moveSlide(event.key==='ArrowRight'?1:-1);}});

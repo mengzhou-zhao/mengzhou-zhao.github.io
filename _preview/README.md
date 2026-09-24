@@ -12,6 +12,8 @@ From the repository root, run `python -m http.server 8765 --bind 127.0.0.1`, the
 - Hero project carousel: 5.5-second interval, 700 ms cross-fade, manual previous/next and pause
 - Rotation pauses on hover, focus, open dialogs, hidden pages and when offscreen; reduced-motion users start paused
 - Native modal dialog: Escape to close, keyboard focus containment, arrow-key navigation
+- Nonlinear case transition: shared project image motion and staggered content reveal on open, followed by a short direction-aware scale and fade on close
+- Reduced-motion users receive a short fade without shared-image movement
 - Engineering process tabs with arrow-key navigation
 - Responsive layout and reduced-motion support
 
