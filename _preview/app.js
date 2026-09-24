@@ -121,7 +121,7 @@ function restartHeroTimer(){
     const region=$('.hero-carousel'), rect=region.getBoundingClientRect();
     if(document.hidden||dialog.open||region.matches(':hover')||region.contains(document.activeElement)||rect.bottom<0||rect.top>window.innerHeight)return;
     changeHero(heroIndex+1);
-  },5500);
+  },2000);
 }
 $('#hero-prev').addEventListener('click',()=>{changeHero(heroIndex-1);restartHeroTimer();});
 $('#hero-next').addEventListener('click',()=>{changeHero(heroIndex+1);restartHeroTimer();});
